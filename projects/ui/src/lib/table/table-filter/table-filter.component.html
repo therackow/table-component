@@ -1,0 +1,27 @@
+<ng-container *ngIf="type === 'number' || type === 'text'">
+  <input type="text" [placeholder]="placeholderText" (input)="buildSearchQuery($event)" #filter />
+  <p (click)="removeFromSearch()">x</p>
+</ng-container>
+
+<ng-container *ngIf="type === 'date'">
+  <app-date-filter (datePicked)="buildSearchQuery($event)" #filter></app-date-filter>
+  <p (click)="removeFromSearch()">x</p>
+</ng-container>
+
+<ng-container *ngIf="type === 'select' || type === 'multi-select'">
+  <ng-select
+    [items]="filterItems"
+    [multiple]="type === 'multi-select'"
+    [placeholder]="placeholderText"
+    (change)="buildSearchQuery($event)"
+    [clearable]="false"
+    [(ngModel)]="selectedItem"
+    #filter
+  ></ng-select>
+  <p (click)="removeFromSearch()">x</p>
+</ng-container>
+
+<ng-container *ngIf="type === 'checkbox'">
+  <app-tri-state-checkbox (checkboxUpdated)="buildSearchQuery($event)" #filter></app-tri-state-checkbox>
+  <p (click)="removeFromSearch()">x</p>
+</ng-container>

@@ -1,0 +1,40 @@
+.alert {
+  @include gp-font-size(16);
+
+  min-height: 45px;
+  width: auto;
+  margin-bottom: 30px;
+  padding: 10px;
+  font-weight: $regular;
+  border: none;
+  border-radius: 0;
+  line-height: 24px;
+
+  &.alert-dismissible {
+    padding-right: 40px;
+
+    .btn-close {
+      padding: 1rem;
+      padding-top: 0.75rem;
+    }
+  }
+
+  &.alert-error {
+    background-color: $ruby-10;
+    color: $ruby-70;
+  }
+
+  &.alert-normal {
+    background-color: $iris-10;
+    color: $onyx-80;
+  }
+
+  &.alert-success {
+    background-color: $agate-10;
+    color: $agate-70;
+  }
+
+  ul {
+    margin: 0;
+  }
+}

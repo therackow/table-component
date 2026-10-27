@@ -1,0 +1,213 @@
+/* stylelint-disable scss/comment-no-empty */
+// Variables
+//
+// This file overwrites various variables from the bootstrap variables file.
+//
+//
+
+// Table of Contents
+//
+// Color system
+// Options
+// Spacing
+// Body
+// Links
+// Paragraphs
+// Grid breakpoints
+// Grid containers
+// Grid columns
+// Fonts
+// Components
+// Tables
+// Buttons
+// Forms
+// Dropdowns
+// Z-index master list
+// Navs
+// Navbar
+// Pagination
+// Jumbotron
+// Form states and alerts
+// Cards
+// Tooltips
+// Popovers
+// Badges
+// Modals
+// Alerts
+// Progress bars
+// List group
+// Image thumbnails
+// Figures
+// Breadcrumbs
+// Carousel
+// Close
+// Code
+
+$icon-font-path: "../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
+
+//
+// Color system
+//
+
+// -- Agate -- //
+$agate-10: #e3f1ee;
+$agate-30: #b9dcd3;
+$agate-ui-50: #569d8a;
+$agate-60: #117a60;
+$agate-70: #0a614b;
+$agate-80: #024530;
+
+// -- Jade -- //
+$jade-10: #dff0f3;
+$jade-30: #c0e1e8;
+$jade-ui-50: #6e9ba6;
+$jade-60: #497984;
+$jade-70: #34545c;
+$jade-80: #233e45;
+
+// -- Lazuli -- //
+$lazuli-10: #e2f6fa;
+$lazuli-30: #b5e7f2;
+$lazuli-ui-50: #1c9fce; // Outline for secondary button
+$lazuli-60: #0d7eaa; // Default button and inline link
+$lazuli-70: #005e89;
+$lazuli-80: #004c67; // Hover state for button and link
+$lazuli-inactive: #9aacb7; // Inactive state for button and link
+
+// -- Ruby -- //
+$ruby-10: #fdeaee;
+$ruby-30: #fbccd2;
+$ruby-ui-50: #dd7074;
+$ruby-60: #ce4745;
+$ruby-70: #c12d2a;
+$ruby-80: #a31e1f;
+
+// -- Tanzanite -- //
+$tanzanite-focus-50: #b02285; // Focus indicator only
+$tanzanite-60: #931379;
+$tanzanite-70: #690565;
+
+// -- iris -- //
+$iris-10: #ebe6f0;
+$iris-30: #ccc2db;
+$iris-ui-50: #8b73ac;
+$iris-60: #73579b;
+$iris-70: #5d3c8b;
+$iris-80: #422a73;
+
+// -- Thulian -- //
+$thulian-10: #f6eaef;
+$thulian-30: #eed6e0;
+$thulian-ui-50: #b97ea1;
+$thulian-60: #97607f;
+$thulian-70: #753d5f;
+$thulian-80: #522847;
+
+// -- Topaz -- //
+$topaz-10: #f2e7e5;
+$topaz-30: #ebc8b8;
+$topaz-ui-50: #cb6e3e;
+$topaz-60: #ae4e18;
+$topaz-70: #873d16;
+$topaz-80: #672f17;
+
+// -- Citrine -- //
+$citrine-10: #fdfbe7;
+$citrine-30: #fbf4c4;
+$citrine-50: #f5e578;
+$citrine-60: #f2db46;
+
+// -- Medallion -- //
+$medallion-10: #eeead8;
+$medallion-30: #ddd5b1;
+$medallion-50: #c2b58b;
+
+// -- Onyx -- //
+$onyx-10: #f2f2f2;
+$onyx-30: #e6e6e6;
+$onyx-ui-50: #808080; // Form field outlines and inactive
+$onyx-60: #737373; // Placeholder text, no inline links
+$onyx-70: #595959; // Headers, no inline links
+$onyx-80: #404040; // Labels and subheads, no inline links
+$onyx-90: #262626; // Body text, supports inline links
+
+// -- White -- //
+$white-00: #fff;
+
+// Fonts
+$font-family-sans-serif: "IBM Plex Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+
+// Font names for weights
+$lighter: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+
+// z-index variables from bootstrap
+$zindex-dropdown: 1000 !default;
+$zindex-sticky: 1020 !default;
+$zindex-fixed: 1030 !default;
+$zindex-offcanvas-backdrop: 1040 !default;
+$zindex-offcanvas: 1045 !default;
+$zindex-modal-backdrop: 1050 !default;
+$zindex-modal: 1055 !default;
+$zindex-popover: 1070 !default;
+$zindex-tooltip: 1080 !default;
+$zindex-toast: 1090 !default;
+
+// Animation durations (these should be kept in sync with their Typescript counterparts in animations.ts)
+$duration-short: 400ms;
+$duration-medium: 800ms;
+$duration-long: 1500ms;
+
+// links
+$link-hover-decoration: none;
+$link-decoration: none;
+
+// grid modifications
+$grid-gutter-width: 20px;
+$line-height-base: 1.25;
+$line-height-lg: 1.25;
+$line-height-sm: 1.25;
+
+// Forms
+$form-group-margin-bottom: 30px;
+$form-label-margin-bottom: 0.25rem !default;
+$form-check-input-width: 24px !default;
+$form-check-min-height: 24px !default;
+$form-check-padding-start: 30px !default;
+$form-check-input-border-radius: 4px !default;
+$form-check-input-border: 2px solid $lazuli-60 !default;
+$form-check-input-focus-border: none !default;
+$form-check-input-focus-box-shadow: none !default;
+$form-check-input-active-filter: none !default;
+$form-check-input-checked-color: $white-00 !default;
+$form-check-input-checked-bg-color: $lazuli-60 !default;
+$form-check-input-checked-border-color: $lazuli-60 !default;
+$form-check-input-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$form-check-input-checked-color}' stroke-linecap='butt' stroke-linejoin='miter' stroke-width='2' d='m6 10 3 3 6-6'/></svg>");
+$form-check-radio-border-radius: 50%;
+$form-check-radio-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='4' fill='#{$form-check-input-checked-color}'/><circle r='2.5' fill='#{$lazuli-60}'/></svg>");
+
+// Close button
+$btn-close-color: $onyx-90;
+$btn-close-opacity: 1;
+$btn-close-hover-opacity: 0.75;
+$btn-close-focus-opacity: 0.75;
+$btn-close-disabled-opacity: 0.25;
+
+// Remove smooth scrolling
+$enable-smooth-scroll: false;
+
+// Dropdowns
+$dropdown-border-color: $lazuli-ui-50;
+$dropdown-border-radius: 4px;
+$dropdown-border-width: 2px;
+$dropdown-padding-y: 0;
+$caret-width: 0.5em;
+$caret-spacing: 4px;
+
+// Buttons
+$btn-disabled-opacity: 1;
+
+/* stylelint-enable scss/comment-no-empty */

@@ -1,0 +1,100 @@
+.popover {
+  border-radius: 0;
+  max-width: 340px;
+  border: 1px solid $onyx-ui-50;
+
+  .popover-body {
+    @include gp-font-size(14);
+
+    padding: 15px;
+    font-family: $font-family-sans-serif;
+    font-weight: $regular;
+    line-height: 20px;
+    color: $onyx-90;
+  }
+
+  .btn-group {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+
+    .btn {
+      margin-right: 15px;
+      flex: none;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+
+  table &,
+  .table & {
+    font-family: $font-family-sans-serif;
+
+    .popover-body {
+      @include gp-font-size(12);
+
+      fa-icon {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: $lazuli-60;
+        cursor: pointer;
+
+        &:hover {
+          color: $lazuli-80;
+        }
+      }
+
+      .row {
+        .form-group {
+          margin-right: 15px;
+          margin-bottom: 15px;
+
+          &:last-of-type {
+            margin: 0;
+          }
+
+          label,
+          .form-control {
+            @include gp-font-size(12);
+
+            margin-right: 0;
+          }
+
+          label {
+            margin-bottom: 8px;
+            height: 10px;
+          }
+
+          input,
+          select {
+            height: 25px;
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  &.error {
+    border: 1px solid $ruby-60;
+    background-color: $ruby-60;
+
+    & > .popover-arrow::after {
+      border-top-color: $ruby-60;
+    }
+
+    .popover-body {
+      @include gp-font-size(14);
+
+      color: $white-00;
+
+      table &,
+      .table & {
+        @include gp-font-size(14);
+      }
+    }
+  }
+}

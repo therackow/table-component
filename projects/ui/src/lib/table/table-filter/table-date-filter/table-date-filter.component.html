@@ -1,0 +1,14 @@
+<select [(ngModel)]="dateType" (change)="dateSelectTypeChange()">
+  <option value="on">On</option>
+  <option value="before">Before</option>
+  <option value="after">After</option>
+  <option value="between">Between</option>
+</select>
+<app-datepicker [clear]="clear" (dateChanged)="dateSelected($event, 1)" #datePickerOne></app-datepicker>
+<app-datepicker
+  [clear]="clear"
+  *ngIf="dateType === 'between'"
+  (dateChanged)="dateSelected($event, 2)"
+  #datePickerTwo
+  [preLoadedDate]="preloadedDateTwo"
+></app-datepicker>

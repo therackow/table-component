@@ -1,0 +1,68 @@
+.btn:not(.nav-link) {
+  display: inline-flex;
+  align-items: center;
+
+  &.btn-standard {
+    &.btn-strong {
+      &.btn-default {
+        @include button-builder(standard, strong, default);
+      }
+
+      &.btn-destructive {
+        @include button-builder(standard, strong, destructive);
+      }
+    }
+
+    &.btn-medium {
+      &.btn-default {
+        @include button-builder(standard, medium, default);
+      }
+
+      &.btn-destructive {
+        @include button-builder(standard, medium, destructive);
+      }
+    }
+
+    &.btn-low {
+      &.btn-default {
+        @include button-builder(standard, low, default);
+      }
+
+      &.btn-destructive {
+        @include button-builder(standard, low, destructive);
+      }
+    }
+  }
+
+  &.btn-small {
+    &.btn-strong {
+      &.btn-default {
+        @include button-builder(small, strong, default);
+      }
+
+      &.btn-destructive {
+        @include button-builder(small, strong, destructive);
+      }
+    }
+
+    &.btn-medium {
+      &.btn-default {
+        @include button-builder(small, medium, default);
+      }
+
+      &.btn-destructive {
+        @include button-builder(small, medium, destructive);
+      }
+    }
+
+    &.btn-low {
+      &.btn-default {
+        @include button-builder(small, low, default);
+      }
+
+      &.btn-destructive {
+        @include button-builder(small, low, destructive);
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.nav-tabs {
+  border-bottom: 1px solid $onyx-ui-50;
+
+  li.nav-item {
+    button.btn.nav-link {
+      @include button-builder(standard, low, default);
+
+      border: 1px solid transparent;
+      border-bottom: 1px solid $onyx-ui-50;
+      border-radius: 0;
+      padding-left: 30px;
+      padding-right: 30px;
+
+      &.active {
+        border: 1px solid $onyx-ui-50;
+        border-bottom: none;
+        color: $onyx-70;
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: $onyx-70;
+          text-decoration: none;
+          cursor: default;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}

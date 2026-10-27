@@ -1,0 +1,15 @@
+<input
+  class="form-control"
+  [(ngModel)]="date"
+  ngbDatepicker
+  #datePicker="ngbDatepicker"
+  (click)="!disabled ? datePicker.toggle() : null"
+  (dateSelect)="emit()"
+  (blur)="blurInput($event)"
+  (change)="manualChange($event)"
+  [maxDate]="maxDate"
+  [minDate]="minDate"
+  [container]="container"
+  [disabled]="disabled"
+  type="text"
+/>

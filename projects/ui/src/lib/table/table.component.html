@@ -1,0 +1,77 @@
+<ng-container *ngTemplateOutlet="tableActions"></ng-container>
+<ng-container *ngTemplateOutlet="loading ? loadingBodyTemplate : null"></ng-container>
+
+<div
+  class="table-wrapper"
+  [ngClass]="{ 'scroll-y': tableConfig.tableHeight ? true : false }"
+  [ngStyle]="tableConfig.tableHeight ? { 'max-height': tableConfig.tableHeight } : {}"
+  #mainTable
+>
+  <table class="table primary-table">
+    <caption class="visually-hidden"
+      ><span>{{ tableConfig.tableCaption }}</span
+      ><br />
+      <span>{{ tableConfig.tableSummary }}</span>
+    </caption>
+    <thead>
+      <!-- The Header -->
+      <ng-container *ngTemplateOutlet="header"></ng-container>
+      <!-- /The Header -->
+    </thead>
+    <tbody>
+      <!-- The Body -->
+      <ng-template ngFor let-rowData let-rowIndex="index" [ngForOf]="data">
+        <!-- Row grouping header -->
+        <ng-container
+          *ngIf="groupHeaderTemplate && tableConfig.groupRow && shouldRenderRowGroupHeader(data, rowData, rowIndex)"
+          role="row"
+        >
+          <ng-container *ngTemplateOutlet="groupHeaderTemplate; context: { $implicit: rowData }"></ng-container>
+        </ng-container>
+        <!-- /Row grouping header -->
+        <ng-container
+          *ngTemplateOutlet="rowData ? body : loadingBodyTemplate; context: { $implicit: rowData }"
+        ></ng-container>
+      </ng-template>
+      <!-- /The Body -->
+
+      <tr *ngIf="data?.length === 0">
+        <td colspan="10"
+          >No data found.<ng-container *ngIf="this.tableService.filteredTable$ | async"
+            >&nbsp;Filters are applied.
+            <button class="btn btn-small btn-main btn-filled" (click)="clearFilters()">Clear</button></ng-container
+          >
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div *ngIf="!loading" class="d-flex justify-content-between p-2">
+  <p
+    ><ng-container *ngIf="this.tableService.anyRowsSelected$ | async"
+      >{{ selectedRows.length }} selected.&nbsp;</ng-container
+    >Showing {{ start }} to {{ end }} of {{ filteredCount
+    }}<ng-container *ngIf="this.tableService.filteredTable$ | async"
+      >&nbsp;(filtered from {{ totalDataRecodsLength }} total)</ng-container
+    ></p
+  >
+
+  <ngb-pagination
+    [collectionSize]="filteredCount"
+    [(page)]="tableService.page"
+    [pageSize]="tableService.pageSize"
+    [maxSize]="5"
+    [rotate]="true"
+    [ellipses]="false"
+    [boundaryLinks]="true"
+    (pageChange)="onPageChange()"
+  >
+  </ngb-pagination>
+
+  <select class="form-select" style="width: auto" name="pageSize" [(ngModel)]="tableService.pageSize">
+    <option [ngValue]="2">2 items per page</option>
+    <option [ngValue]="4">4 items per page</option>
+    <option [ngValue]="6">6 items per page</option>
+    <option [ngValue]="25">25 items per page</option>
+  </select>
+</div>

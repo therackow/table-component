@@ -1,0 +1,74 @@
+@import "../abstracts/abstracts";
+
+ngb-modal-window {
+  &.full-screen {
+    .modal-dialog {
+      width: calc(100% - 60px);
+      max-width: 100%;
+    }
+  }
+
+  .modal-sm {
+    .modal-header {
+      .modal-title {
+        @include gp-font-size(20);
+
+        line-height: 28px;
+      }
+    }
+
+    .modal-body {
+      @include gp-font-size(14);
+
+      line-height: 20px;
+    }
+  }
+
+  .modal-header {
+    height: 65px;
+    background-color: $white-00;
+    padding: 20px;
+    margin: 0;
+    border-bottom: 4px solid $iris-ui-50;
+    border-radius: 0;
+    align-items: center;
+
+    .modal-title {
+      @include gp-font-size(24);
+
+      color: $iris-ui-50;
+      font-weight: $medium;
+      line-height: 32px;
+      letter-spacing: 0.15px;
+    }
+
+    .btn-close {
+      opacity: 1;
+    }
+  }
+
+  .modal-body {
+    @include gp-font-size(16);
+
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    border: 1px solid $onyx-ui-50;
+    padding: 20px 30px 40px;
+    color: $onyx-90;
+
+    .btn-group {
+      margin-top: 30px;
+      display: flex;
+      justify-content: flex-end;
+
+      .btn {
+        margin-right: 20px;
+        flex: none;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

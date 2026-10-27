@@ -1,0 +1,270 @@
+// Non-DataTables table styling
+table {
+  font-family: $font-family-sans-serif;
+  width: 100%;
+
+  tbody {
+    tr {
+      td {
+        a {
+          background-color: $white-00 !important; // links in table cells should _always_ have a white background, even in child rows, warning rows, and error rows.
+        }
+      }
+    }
+  }
+
+  &.primary-table {
+    thead {
+      z-index: 2;
+
+      th {
+        background-color: $jade-60;
+        border-right: 1px solid $white-00;
+        color: $white-00;
+        font-weight: $medium;
+
+        &:last-of-type {
+          border-right: none;
+        }
+
+        /* stylelint-disable selector-class-pattern */ // These are from dataTables, we dont control them.
+        &.sorting,
+        &.sorting_asc,
+        &.sorting_desc {
+          cursor: pointer;
+        }
+        /* stylelint-enable selector-class-pattern */
+      }
+    }
+
+    tbody {
+      tr {
+        &:nth-child(odd of .main-row) {
+          background-color: $white-00;
+          border-bottom: 1px solid $onyx-ui-50;
+
+          td {
+            &[class^="sort"] {
+              background-color: $jade-10;
+            }
+          }
+        }
+
+        &:nth-child(even of .main-row) {
+          background-color: $onyx-10;
+          border-bottom: 1px solid $onyx-ui-50;
+
+          td {
+            &[class^="sort"] {
+              background-color: $jade-30;
+            }
+          }
+        }
+
+        td {
+          color: $onyx-90;
+          font-weight: $regular;
+          word-break: break-all;
+        }
+
+        &.warning-row {
+          background-color: $iris-10;
+          border-bottom: 5px solid $iris-70;
+        }
+
+        &.error-row {
+          background-color: $ruby-10;
+          border-bottom: 5px solid $ruby-70;
+        }
+      }
+    }
+
+    tr {
+      @include gp-font-size(14);
+
+      height: 40px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0;
+
+      th,
+      td {
+        padding: 10px;
+
+        &.no-data {
+          @include gp-font-size(30);
+
+          padding-top: 45px;
+          padding-bottom: 45px;
+          font-family: $font-family-sans-serif;
+          text-align: center;
+          background-color: $white-00;
+        }
+      }
+    }
+  }
+
+  &.secondary-table {
+    thead {
+      z-index: 2;
+
+      th {
+        @include gp-font-size(16);
+
+        background-color: $jade-60;
+        border-right: 1px solid $white-00;
+        color: $white-00;
+        font-weight: $medium;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+
+        &:last-of-type {
+          border-right: none;
+        }
+
+        &.toggle-row {
+          width: 48px;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          color: $onyx-80;
+          word-break: break-all;
+
+          &.no-data {
+            @include gp-font-size(30);
+
+            padding-top: 45px;
+            padding-bottom: 45px;
+            font-family: $font-family-sans-serif;
+            text-align: center;
+            background-color: $white-00;
+          }
+
+          &.toggle-row {
+            padding: 0;
+
+            div {
+              width: 48px;
+              padding: 10px;
+              text-align: center;
+
+              fa-icon {
+                @include gp-font-size(14);
+
+                pointer-events: none;
+                color: $lazuli-60;
+
+                &:hover {
+                  color: $lazuli-80;
+                }
+
+                &:active {
+                  color: $lazuli-70;
+                }
+              }
+            }
+          }
+        }
+
+        &.child-row {
+          background-color: $onyx-10;
+        }
+
+        &.warning-row {
+          background-color: $iris-10;
+          border-bottom: 5px solid $iris-70;
+        }
+
+        &.error-row {
+          background-color: $ruby-10;
+          border-bottom: 5px solid $ruby-70;
+        }
+      }
+    }
+
+    tr {
+      @include gp-font-size(14);
+
+      height: 40px;
+      font-weight: $regular;
+      border-bottom: 1px solid $onyx-ui-50;
+      background-color: $white-00;
+      line-height: 20px;
+      letter-spacing: 0;
+
+      th,
+      td {
+        vertical-align: top;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+.table-form-group {
+  @include gp-font-size(12);
+
+  font-family: $font-family-sans-serif;
+  margin-bottom: 10px;
+
+  label {
+    margin-bottom: 5px;
+    width: 100%;
+    color: $onyx-80;
+  }
+
+  select {
+    min-height: 25px;
+    height: 25px;
+    padding-right: 10px;
+    max-width: 100%;
+    min-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: $onyx-80;
+  }
+
+  input {
+    min-height: 25px;
+    height: 25px;
+    color: $onyx-80;
+  }
+}
+
+// new table styling
+app-table {
+  .table-wrapper {
+    width: 100%;
+    border-bottom: 1px solid $onyx-ui-50;
+
+    &.scroll-y {
+      overflow-y: auto;
+    }
+
+    .table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin-bottom: 0;
+
+      thead {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+      }
+
+      tbody {
+        .group-header {
+          position: sticky;
+          top: 147px;
+          background-color: $onyx-ui-50;
+          border-bottom: 1px solid $black;
+        }
+      }
+    }
+  }
+}

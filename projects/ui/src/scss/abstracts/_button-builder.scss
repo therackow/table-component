@@ -1,0 +1,197 @@
+@mixin button-builder($size, $weight, $type) {
+  @if $size == standard {
+    @include gp-font-size(16);
+
+    height: 44px;
+    padding: 12px;
+    border-radius: 4px;
+    gap: 8px;
+    font-family: $font-family-sans-serif;
+    font-weight: $medium;
+    line-height: 20px;
+    letter-spacing: 0.15px;
+  } @else if $size == small {
+    @include gp-font-size(14);
+
+    height: 24px;
+    border-radius: 4px;
+    gap: 4px;
+    font-family: $font-family-sans-serif;
+    font-weight: $medium;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    padding: 2px 8px;
+  }
+
+  &:hover:not(:disabled),
+  &:focus:not(:disabled),
+  &:active:not(:disabled) {
+    text-decoration-line: underline;
+    text-decoration-thickness: 8%;
+    text-underline-offset: 2px;
+  }
+
+  &:focus-visible:not(:disabled) {
+    box-shadow:
+      0 0 0 4px $white-00,
+      0 0 0 6px $tanzanite-focus-50,
+      0 0 0 8px $white-00;
+  }
+
+  @if $weight == strong {
+    color: $white-00;
+
+    &.disabled,
+    &:disabled {
+      background-color: $lazuli-inactive;
+      border: solid 2px $lazuli-inactive;
+      cursor: not-allowed;
+      text-decoration: none;
+    }
+
+    &:not(:disabled, .disabled) {
+      @if $type == default {
+        background-color: $lazuli-60;
+        border: solid 2px $lazuli-60;
+
+        &:hover,
+        &:focus {
+          background-color: $lazuli-80;
+          border: solid 2px $lazuli-80;
+          text-decoration-style: solid;
+        }
+
+        &:active {
+          background-color: $lazuli-70;
+          border: solid 2px $lazuli-70;
+          text-decoration-style: dotted;
+        }
+      } @else if $type == destructive {
+        background-color: $ruby-60;
+        border: solid 2px $ruby-60;
+
+        &:hover,
+        &:focus {
+          background-color: $ruby-80;
+          border: solid 2px $ruby-80;
+          text-decoration-style: solid;
+        }
+
+        &:active {
+          background-color: $ruby-70;
+          border: solid 2px $ruby-70;
+          text-decoration-style: dotted;
+        }
+      }
+    }
+  } @else if $weight == medium {
+    background-color: $white-00;
+    border: 2px solid;
+
+    &.disabled,
+    &:disabled {
+      color: $lazuli-inactive;
+      border-color: $lazuli-inactive;
+      background-color: $white-00;
+      cursor: not-allowed;
+      text-decoration: none;
+    }
+
+    &:not(:disabled, .disabled) {
+      @if $type == default {
+        border-color: $lazuli-ui-50;
+        color: $lazuli-60;
+
+        &:hover {
+          color: $lazuli-80;
+          border-color: $lazuli-80;
+          text-decoration-style: solid;
+        }
+
+        &:focus {
+          color: $lazuli-80;
+          border-color: $lazuli-80;
+          text-decoration-style: solid;
+        }
+
+        &:active {
+          color: $lazuli-70;
+          border-color: $lazuli-70;
+          text-decoration-style: dotted;
+        }
+      } @else if $type == destructive {
+        border-color: $lazuli-ui-50;
+        color: $lazuli-60;
+
+        &:hover {
+          background-color: $ruby-60;
+          border-color: $ruby-60;
+          color: $white-00;
+          text-decoration-style: solid;
+        }
+
+        &:focus {
+          background-color: $ruby-60;
+          border-color: $ruby-60;
+          color: $white-00;
+          text-decoration-style: solid;
+        }
+
+        &:active {
+          background-color: $ruby-70;
+          border-color: $ruby-70;
+          color: $white-00;
+          text-decoration-style: dotted;
+        }
+      }
+    }
+  } @else if $weight == low {
+    background-color: $white-00;
+    border: solid 2px $white-00;
+
+    &.disabled,
+    &:disabled {
+      color: $lazuli-inactive;
+      cursor: not-allowed;
+      text-decoration: none;
+    }
+
+    &:not(:disabled, .disabled) {
+      @if $type == default {
+        color: $lazuli-60;
+
+        &:hover {
+          color: $lazuli-80;
+          text-decoration-style: solid;
+        }
+
+        &:focus {
+          color: $lazuli-80;
+          text-decoration-style: solid;
+        }
+
+        &:active {
+          color: $lazuli-70;
+          text-decoration-style: dotted;
+        }
+      } @else if $type == destructive {
+        color: $lazuli-60;
+
+        &:hover {
+          color: $ruby-60;
+          text-decoration-style: solid;
+        }
+
+        &:focus {
+          color: $ruby-60;
+          text-decoration-style: solid;
+        }
+
+        &:active {
+          color: $ruby-70;
+          text-decoration-style: dotted;
+        }
+      }
+    }
+  }
+}

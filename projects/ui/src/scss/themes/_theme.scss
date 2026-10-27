@@ -1,0 +1,102 @@
+// Typeography
+@import "@ng-select/ng-select/themes/default.theme.css";
+
+body {
+  font-family: $font-family-sans-serif;
+}
+
+h1 {
+  @include gp-font-size(32);
+
+  color: $onyx-70;
+  font-weight: $regular;
+  margin-bottom: 0;
+  line-height: 48px;
+  letter-spacing: 0.38px;
+}
+
+h2 {
+  @include gp-font-size(28);
+
+  color: $onyx-70;
+  font-weight: $regular;
+  margin-bottom: 0;
+  line-height: 42px;
+  letter-spacing: 0.34px;
+}
+
+h3 {
+  @include gp-font-size(18);
+
+  color: $onyx-80;
+  font-weight: $semibold;
+  margin-bottom: 0;
+  line-height: 27px;
+  letter-spacing: 0.22px;
+}
+
+h4 {
+  @include gp-font-size(16);
+
+  color: $onyx-80;
+  font-weight: $semibold;
+  margin-bottom: 0;
+  line-height: 24px;
+  letter-spacing: 0.19px;
+}
+
+.no-content {
+  @include gp-font-size(24);
+
+  color: $onyx-70;
+  font-weight: $regular;
+  line-height: 36px;
+  letter-spacing: 0.29px;
+}
+
+.lg-body {
+  @include gp-font-size(16);
+
+  color: $onyx-90;
+  font-weight: $regular;
+  line-height: 24px;
+  letter-spacing: 0.19px;
+
+  &.bold,
+  .bold {
+    font-weight: $bold;
+  }
+}
+
+.sm-body {
+  @include gp-font-size(14);
+
+  color: $onyx-90;
+  font-weight: $regular;
+  line-height: 21px;
+  letter-spacing: 0.17px;
+
+  &.bold,
+  .bold {
+    font-weight: $bold;
+  }
+}
+
+.disclaimer {
+  @include gp-font-size(14);
+
+  color: $onyx-90;
+  font-weight: $regular;
+  line-height: 21px;
+  letter-spacing: 0.17px;
+}
+
+.pipe {
+  @include gp-font-size(14);
+
+  font-weight: $regular;
+  margin: 0 16px;
+  color: $onyx-90;
+  line-height: 21px;
+  letter-spacing: 0.17px;
+}

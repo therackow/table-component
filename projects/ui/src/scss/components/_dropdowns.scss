@@ -1,0 +1,20 @@
+.dropdown {
+  .dropdown-menu {
+    .dropdown-item {
+      @include font-size(14px);
+
+      font-weight: $medium;
+      line-height: 28px;
+      letter-spacing: 0.17px;
+      color: $lazuli-60;
+      padding: 2px 8px;
+
+      &:hover,
+      &:focus {
+        color: $white-00;
+        text-decoration: underline;
+        background-color: $lazuli-80;
+      }
+    }
+  }
+}

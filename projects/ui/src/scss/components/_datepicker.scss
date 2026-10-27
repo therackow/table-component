@@ -1,0 +1,76 @@
+app-datepicker {
+  ngb-datepicker {
+    border-color: $onyx-ui-50 !important;
+
+    ngb-datepicker-navigation {
+      .app-form & {
+        .ngb-dp-arrow {
+          display: none;
+        }
+
+        .ngb-dp-navigation-select {
+          gap: 0.25rem;
+          margin: 0 0.25rem;
+        }
+      }
+
+      .ngb-dp-arrow {
+        .btn-link {
+          color: $lazuli-60 !important;
+
+          &:hover {
+            color: $lazuli-80 !important;
+          }
+        }
+      }
+
+      ngb-datepicker-navigation-select {
+        select.form-select {
+          border-color: $lazuli-60 !important;
+          color: $onyx-90 !important;
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%230d7eaa' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
+
+          &:hover {
+            border-color: $lazuli-80 !important;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23004c67' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
+          }
+        }
+      }
+    }
+
+    ngb-datepicker-month {
+      .ngb-dp-weekdays {
+        border-bottom-color: $onyx-ui-50 !important;
+
+        .ngb-dp-weekday {
+          color: $tanzanite-60 !important;
+        }
+      }
+
+      .ngb-dp-day {
+        [ngbDatepickerDayView] {
+          color: $onyx-90 !important;
+
+          &.bg-primary {
+            background-color: $lazuli-60 !important;
+            color: $white-00 !important;
+          }
+
+          &:hover:not(.bg-primary),
+          .active {
+            background-color: $lazuli-10 !important;
+            outline-color: $lazuli-ui-50 !important;
+          }
+
+          &.text-muted {
+            color: $onyx-ui-50 !important;
+
+            &.outside {
+              opacity: 1 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

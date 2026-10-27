@@ -1,0 +1,34 @@
+.slider-no-content {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  text-align: center;
+}
+
+.slider-body-wrapper {
+  @include gp-font-size(16);
+
+  color: $onyx-90;
+  font-weight: $regular;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+
+  .slider-title {
+    @include gp-font-size(14);
+
+    font-weight: $regular;
+    color: $onyx-70;
+    letter-spacing: 0.25px;
+    line-height: 24px;
+    margin-bottom: 8px;
+  }
+
+  .slider-header {
+    @include gp-font-size(28);
+
+    font-weight: $regular;
+    color: $jade-60;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin-bottom: 16px;
+  }
+}

@@ -1,0 +1,98 @@
+/* stylelint-disable selector-not-notation */
+// links
+a,
+a:not([href], [tabindex]),
+a:not([href]):not([class]) {
+  @include gp-font-size(16);
+
+  font-family: $font-family-sans-serif;
+  font-weight: $regular;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+  display: inline-flex;
+  align-items: baseline;
+  position: relative;
+  z-index: 1;
+  padding: 2px 0;
+  margin: -2px 0;
+  gap: 4px;
+
+  // Default colors
+  color: $lazuli-60;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 8%;
+
+  fa-icon {
+    @include gp-font-size(14);
+  }
+
+  &.inline-link {
+    line-height: 24px;
+
+    fa-icon {
+      @include gp-font-size(12);
+    }
+  }
+
+  &:hover {
+    color: $lazuli-80;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  &:focus {
+    color: $lazuli-80;
+    outline: none;
+    border-radius: 4px;
+  }
+
+  &:focus-visible {
+    box-shadow:
+      0 0 0 4px $white-00,
+      0 0 0 6px $tanzanite-focus-50,
+      0 0 0 8px $white-00;
+  }
+
+  &:active {
+    color: $lazuli-70;
+    text-decoration-style: dotted;
+  }
+
+  &.destructive {
+    &:hover {
+      color: $ruby-60;
+    }
+
+    &:focus {
+      color: $ruby-60;
+      outline: none;
+      border-radius: 4px;
+      box-shadow:
+        0 0 0 4px $white-00,
+        0 0 0 6px $tanzanite-focus-50,
+        0 0 0 8px $white-00;
+    }
+
+    &:active {
+      color: $ruby-70;
+      text-decoration-style: dotted;
+    }
+  }
+
+  &.sm-link {
+    @include gp-font-size(14);
+
+    letter-spacing: 0.1px;
+
+    fa-icon {
+      @include gp-font-size(12);
+    }
+
+    &.inline-link {
+      fa-icon {
+        @include gp-font-size(10);
+      }
+    }
+  }
+}

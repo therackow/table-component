@@ -1,0 +1,6 @@
+@use "sass:math";
+
+@mixin gp-font-size($sizeValue: 16) {
+  font-size: ($sizeValue * 1) + px;
+  font-size: math.div($sizeValue, 16) + rem;
+}

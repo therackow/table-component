@@ -1,0 +1,4 @@
+<div class="d-inline-block" (click)="onClick()" role="checkbox" tabindex="0" (keyup.enter)="onClick()">
+  <fa-icon *ngIf="value === false" [icon]="faSquare" [size]="'xl'"></fa-icon>
+  <fa-icon *ngIf="value === true" [icon]="faSquareCheck" [size]="'xl'"></fa-icon>
+</div>

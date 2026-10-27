@@ -1,0 +1,60 @@
+dl {
+  .description-header {
+    @include gp-font-size(14);
+
+    font-weight: $semibold;
+    background-color: $jade-60;
+    color: $white-00;
+    line-height: 18px;
+    letter-spacing: 0.17px;
+    min-height: 50px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .description {
+    min-height: 40px;
+    border-bottom: 1px solid $onyx-ui-50;
+    display: flex;
+    background-color: $white-00;
+
+    dt,
+    dd {
+      @include gp-font-size(16);
+
+      align-self: center;
+      margin: 0;
+      width: 50%;
+      padding: 15px 10px;
+      line-height: 24px;
+      letter-spacing: 0.19px;
+    }
+
+    dt {
+      font-weight: $medium;
+      color: $onyx-70;
+    }
+
+    dd {
+      font-weight: $regular;
+      color: $onyx-90;
+
+      &.can-edit {
+        background-color: $medallion-10;
+        border-bottom: 5px solid $onyx-70;
+      }
+    }
+
+    &.has-notification {
+      background-color: $iris-10;
+      border-bottom: 5px solid $iris-70;
+    }
+
+    &.has-error {
+      background-color: $ruby-10;
+      border-bottom: 5px solid $ruby-70;
+    }
+  }
+}

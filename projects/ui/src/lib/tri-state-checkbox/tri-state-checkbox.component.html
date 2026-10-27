@@ -1,0 +1,7 @@
+<div (click)="onClick()">
+  <div role="checkbox">
+    <fa-icon *ngIf="value === null" [icon]="faSquare" [size]="'xl'"></fa-icon>
+    <fa-icon *ngIf="value === true" [icon]="faSquareCheck" [size]="'xl'"></fa-icon>
+    <fa-icon *ngIf="value === false" [icon]="faSquareXmark" [size]="'xl'"></fa-icon>
+  </div>
+</div>

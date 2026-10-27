@@ -1,0 +1,106 @@
+<!-- This is a place to test and dev the library -->
+<app-table [tableConfig]="config" (rowsSelected)="onRowsSelected($event)">
+  <ng-template appTemplate name="header">
+    <tr headerConfig>
+      <th scope="col">#</th>
+      <th scope="col" sortable sortableColumn="name">Country</th>
+      <th scope="col" sortable sortableColumn="area">Area</th>
+      <th scope="col" sortable sortableColumn="population">Population</th>
+      <th scope="col" sortable sortableColumn="g7">In G7</th>
+      <th scope="col" sortable sortableColumn="established">Established On</th>
+      <th scope="col">Languages</th>
+      <th scope="col" sortable sortableColumn="gdpPerCapitaUSD">GDP per capita in USD</th>
+    </tr>
+    <tr class="column-filter-headers">
+      <th scope="col">
+        <!-- Intentionally blank -->
+      </th>
+      <th scope="col">
+        <app-table-filter
+          [type]="'select'"
+          [column]="'name'"
+          [filterItems]="countryChoices$ | async"
+          placeholderText="Select country"
+        ></app-table-filter>
+      </th>
+      <th scope="col">
+        <app-table-filter [type]="'number'" [column]="'area'" placeholderText="Filter area"></app-table-filter>
+      </th>
+      <th scope="col">
+        <app-table-filter
+          [type]="'number'"
+          [column]="'population'"
+          placeholderText="Filter population"
+        ></app-table-filter>
+      </th>
+      <th scope="col">
+        <app-table-filter [type]="'checkbox'" [column]="'g7'" placeholderText="Filter by G7 status"></app-table-filter>
+      </th>
+      <th scope="col">
+        <app-table-filter [type]="'date'" [column]="'established'"></app-table-filter>
+      </th>
+      <th scope="col">
+        <app-table-filter
+          [type]="'multi-select'"
+          [column]="'languages'"
+          placeholderText="Select languages"
+          [filterItems]="languageChoices$ | async"
+        >
+        </app-table-filter>
+      </th>
+      <th scope="col">
+        <app-table-filter
+          [type]="'number'"
+          [column]="'gdpPerCapitaUSD'"
+          placeholderText="Filter population"
+        ></app-table-filter>
+      </th>
+    </tr>
+  </ng-template>
+
+  <ng-template appTemplate name="groupHeaderTemplate" let-country>
+    <tr class="group-header">
+      <td colspan="10">
+        <span class="fw-bold">{{ country.continent }}</span>
+      </td>
+    </tr>
+  </ng-template>
+
+  <ng-template appTemplate name="body" let-country>
+    <tr class="main-row" rowConfig [rowData]="country">
+      <td scope="row">{{ country.id }}</td>
+      <td>
+        <img
+          [src]="'https://upload.wikimedia.org/wikipedia/commons/' + country.flag"
+          class="me-2"
+          style="width: 20px"
+        />
+        {{ country.name }}
+      </td>
+      <td>{{ country.area | number }}</td>
+      <td>{{ country.population | number }}</td>
+      <td>{{ country.g7 }}</td>
+      <td>{{ country.established | gpDatePipe }}</td>
+      <td>
+        <ul>
+          <li *ngFor="let language of country.languages">{{ language }}</li>
+        </ul>
+      </td>
+      <td>{{ country.gdpPerCapitaUSD | gpCurrency: "USD" : "1.2-2" }}</td>
+    </tr>
+    <tr class="expanded-row" *ngIf="country.expanded">
+      <td style="background-color: aqua; border-bottom: 1px solid gray" colspan="10">{{ country | json }}</td>
+    </tr>
+  </ng-template>
+
+  <ng-template appTemplate name="tableActions">
+    <div class="btn btn-group">
+      <button class="btn btn-standard btn-strong btn-default me-3" [disabled]="rowsSelected === false">Approve</button>
+      <button class="btn btn-standard btn-strong btn-destructive" [disabled]="rowsSelected === false">Decline</button>
+    </div>
+  </ng-template>
+
+  <ng-template appTemplate name="loadingBodyTemplate">
+    <p>loading!</p>
+  </ng-template>
+</app-table>

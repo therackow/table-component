@@ -1,0 +1,224 @@
+@mixin fake-button() {
+  height: 24px;
+  border-radius: 4px;
+  gap: 4px;
+  font-family: $font-family-sans-serif;
+  font-weight: $medium;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  padding: 2px 8px;
+}
+
+@mixin step-action($margin-top, $margin-left: null) {
+  > button,
+  span:last-of-type {
+    @include fake-button;
+
+    margin-top: $margin-top;
+
+    @if $margin-left {
+      margin-left: $margin-left;
+    }
+
+    @content;
+  }
+}
+
+@mixin interactive-step-action($margin-top, $margin-left: null) {
+  @include step-action($margin-top, $margin-left) {
+    color: $lazuli-60;
+
+    &:hover {
+      color: $lazuli-80;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+
+.has-wizard {
+  margin-bottom: 75px;
+}
+
+.wizard {
+  height: 75px;
+  border-top: 1px solid $iris-60;
+  background: $white-00;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1005; // In front of nav bar
+
+  .link-container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .step {
+      @include gp-font-size(14);
+
+      > div {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        color: $onyx-80;
+
+        .circle {
+          border: 5px solid;
+          align-self: center;
+          height: 25px;
+          width: 25px;
+          border-radius: 12px;
+          background-color: $white-00;
+
+          .circle-number {
+            @include gp-font-size(14);
+
+            text-align: center;
+            font-family: $font-family-sans-serif;
+            color: $white-00;
+            line-height: 1;
+            font-weight: $bold;
+          }
+        }
+
+        &.active {
+          .circle {
+            border-radius: 15px;
+            height: 30px;
+            width: 30px;
+            background-color: $white-00;
+            box-shadow: 0 0 0 5px $iris-30;
+            color: $iris-60;
+          }
+
+          &.number {
+            .circle {
+              background-color: $iris-60;
+
+              .circle-number {
+                @include gp-font-size(20);
+
+                position: relative;
+                margin-right: 2px;
+              }
+            }
+          }
+
+          &:hover {
+            .circle {
+              color: $iris-60;
+            }
+          }
+
+          @include interactive-step-action(7px);
+        }
+
+        &.inactive {
+          color: $onyx-80;
+
+          .circle {
+            border-color: $iris-60;
+          }
+
+          &.number {
+            .circle {
+              background-color: $white-00;
+              border-width: 2px;
+
+              .circle-number {
+                @include gp-font-size(14);
+
+                margin-top: 3px;
+                color: $iris-60;
+              }
+            }
+          }
+
+          @include step-action(10px, 1px);
+        }
+
+        &.editable {
+          .circle {
+            color: $iris-60;
+          }
+
+          @include interactive-step-action(10px, 1px);
+
+          &:hover {
+            .circle {
+              color: $iris-60;
+            }
+          }
+        }
+
+        &.fail,
+        &.pass {
+          fa-icon {
+            @include gp-font-size(25);
+
+            display: block;
+            height: 24px;
+            width: 24px;
+            align-self: center;
+            position: relative;
+            bottom: 1px;
+            background-color: $white-00;
+            border-radius: 12px;
+          }
+
+          @include step-action(13px);
+        }
+
+        &.active,
+        &.fail,
+        &.pass {
+          top: -15px;
+        }
+
+        &.inactive,
+        &.editable {
+          top: -13px;
+        }
+
+        &.fail {
+          fa-icon {
+            color: $topaz-ui-50;
+            top: 2px;
+
+            svg {
+              position: relative;
+              top: -3px;
+            }
+          }
+
+          > button,
+          span:last-of-type {
+            color: $topaz-60;
+          }
+
+          &:hover {
+            cursor: pointer;
+
+            > button,
+            span:last-of-type {
+              color: $topaz-80;
+              text-decoration: underline;
+            }
+
+            fa-icon {
+              box-shadow: 0 1px 0 6px $topaz-30;
+            }
+          }
+        }
+
+        &.pass {
+          fa-icon {
+            color: $agate-ui-50;
+          }
+        }
+      }
+    }
+  }
+}

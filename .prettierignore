@@ -1,0 +1,10 @@
+# Ignore artifacts
+dist
+coverage
+.angular
+.eslintrc.json
+e2e
+angular.json
+projects/docs/src/api-docs.ts
+docs
+.github
