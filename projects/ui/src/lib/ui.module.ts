@@ -10,8 +10,8 @@ import { NgbModule, NgbDateParserFormatter, NgbDatepickerI18n } from "@ng-bootst
 import { NgSelectModule } from "@ng-select/ng-select";
 
 import { DatepickerComponent, NgbDateAppParserFormatter, AppDatepickerI18n } from "./datepicker/datepicker.component";
-import { GpCurrencyPipe } from "./pipes/gp-currency.pipe";
-import { GpDatePipe } from "./pipes/gp-date.pipe";
+import { AppCurrencyPipe } from "./pipes/app-currency.pipe";
+import { AppDatePipe } from "./pipes/app-date.pipe";
 import { PadZeroPipe } from "./pipes/pad-zero.pipe";
 import { DateFilterComponent } from "./table/table-filter/table-date-filter/table-date-filter.component";
 import { AppTableFilterComponent } from "./table/table-filter/table-filter.component";
@@ -29,8 +29,8 @@ import { UiComponent } from "./ui.component";
 @NgModule({
   declarations: [
     UiComponent,
-    GpCurrencyPipe,
-    GpDatePipe,
+    AppCurrencyPipe,
+    AppDatePipe,
     PadZeroPipe,
     DatepickerComponent,
     TableComponent,
@@ -55,8 +55,8 @@ import { UiComponent } from "./ui.component";
   ],
   exports: [
     UiComponent,
-    GpCurrencyPipe,
-    GpDatePipe,
+    AppCurrencyPipe,
+    AppDatePipe,
     PadZeroPipe,
     DatepickerComponent,
     TableComponent,
@@ -70,7 +70,7 @@ import { UiComponent } from "./ui.component";
     TableRowCheckboxComponent,
   ],
   providers: [
-    GpDatePipe,
+    AppDatePipe,
     {
       provide: NgbDateParserFormatter,
       useClass: NgbDateAppParserFormatter,

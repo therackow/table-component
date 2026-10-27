@@ -3,7 +3,7 @@ import { Component, EventEmitter, OnChanges, Output, SimpleChange, SimpleChanges
 import { NgbDateStruct } from "@ng-bootstrap/ng-bootstrap";
 
 import { DatepickerComponent } from "../../../datepicker/datepicker.component";
-import { GpDatePipe } from "../../../pipes/gp-date.pipe";
+import { AppDatePipe } from "../../../pipes/app-date.pipe";
 import { padZero } from "../../../shared/utils";
 
 /**
@@ -27,7 +27,7 @@ export interface DateFilter {
   selector: "app-date-filter",
   templateUrl: "./table-date-filter.component.html",
   styleUrls: ["./table-date-filter.component.scss"],
-  providers: [GpDatePipe],
+  providers: [AppDatePipe],
 })
 export class DateFilterComponent implements OnChanges {
   /**

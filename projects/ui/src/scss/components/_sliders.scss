@@ -5,7 +5,7 @@
 }
 
 .slider-body-wrapper {
-  @include gp-font-size(16);
+  @include app-font-size(16);
 
   color: $onyx-90;
   font-weight: $regular;
@@ -13,7 +13,7 @@
   letter-spacing: 0.15px;
 
   .slider-title {
-    @include gp-font-size(14);
+    @include app-font-size(14);
 
     font-weight: $regular;
     color: $onyx-70;
@@ -23,7 +23,7 @@
   }
 
   .slider-header {
-    @include gp-font-size(28);
+    @include app-font-size(28);
 
     font-weight: $regular;
     color: $jade-60;

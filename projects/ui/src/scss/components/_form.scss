@@ -29,7 +29,7 @@ form:not(.app-form),
 
     .form-control,
     .form-select {
-      @include gp-font-size(16);
+      @include app-font-size(16);
 
       height: 35px;
       border: 1px solid $onyx-ui-50;
@@ -55,7 +55,7 @@ form:not(.app-form),
     }
 
     label.form-label {
-      @include gp-font-size(14);
+      @include app-font-size(14);
 
       font-weight: $regular;
       margin-bottom: 4px;
@@ -99,7 +99,7 @@ form:not(.app-form),
     }
 
     .validation-error {
-      @include gp-font-size(14);
+      @include app-font-size(14);
 
       background-color: $ruby-60;
       color: $white-00;
@@ -229,7 +229,7 @@ form.app-form,
         }
 
         fa-icon:not(.label-icon) {
-          @include gp-font-size(12);
+          @include app-font-size(12);
 
           top: 26px;
         }
@@ -249,7 +249,7 @@ form.app-form,
 
     label {
       &.form-label {
-        @include gp-font-size(14);
+        @include app-font-size(14);
 
         color: $onyx-80;
         font-weight: $regular;
@@ -273,7 +273,7 @@ form.app-form,
     }
 
     fa-icon.label-icon {
-      @include gp-font-size(14);
+      @include app-font-size(14);
 
       position: relative;
       right: 0;
@@ -284,7 +284,7 @@ form.app-form,
 
     input.form-control,
     textarea.form-control {
-      @include gp-font-size(16);
+      @include app-font-size(16);
 
       border: 1px solid $onyx-ui-50;
       background-color: $white-00;
@@ -357,7 +357,7 @@ form.app-form,
       }
 
       .ng-select-container {
-        @include gp-font-size(16);
+        @include app-font-size(16);
 
         height: 44px;
         border: 1px solid $onyx-ui-50;
@@ -451,7 +451,7 @@ form.app-form,
     }
 
     .form-text {
-      @include gp-font-size(14);
+      @include app-font-size(14);
 
       color: $onyx-80;
       font-weight: $regular;

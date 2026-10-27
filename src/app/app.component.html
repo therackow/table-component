@@ -80,13 +80,13 @@
       <td>{{ country.area | number }}</td>
       <td>{{ country.population | number }}</td>
       <td>{{ country.g7 }}</td>
-      <td>{{ country.established | gpDatePipe }}</td>
+      <td>{{ country.established | appDatePipe }}</td>
       <td>
         <ul>
           <li *ngFor="let language of country.languages">{{ language }}</li>
         </ul>
       </td>
-      <td>{{ country.gdpPerCapitaUSD | gpCurrency: "USD" : "1.2-2" }}</td>
+      <td>{{ country.gdpPerCapitaUSD | appCurrency: "USD" : "1.2-2" }}</td>
     </tr>
     <tr class="expanded-row" *ngIf="country.expanded">
       <td style="background-color: aqua; border-bottom: 1px solid gray" colspan="10">{{ country | json }}</td>

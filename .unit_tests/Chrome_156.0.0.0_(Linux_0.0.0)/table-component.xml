@@ -1,221 +1,221 @@
 <?xml version="1.0"?>
-<testsuite name="Chrome 156.0.0.0 (Linux 0.0.0)" package="" timestamp="2026-10-27T17:53:30" id="0" hostname="Andrew-DESKTOP-New" tests="213" errors="0" failures="0" time="1.642">
+<testsuite name="Chrome 156.0.0.0 (Linux 0.0.0)" package="" timestamp="2026-10-27T18:35:11" id="0" hostname="Andrew-DESKTOP-New" tests="213" errors="0" failures="0" time="1.638">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36"/>
   </properties>
-  <testcase name="GpCurrencyPipe should add USD and go out to two decimals properly by default" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).GpCurrencyPipe"/>
-  <testcase name="GpCurrencyPipe should be able to customize the currency" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).GpCurrencyPipe"/>
-  <testcase name="GpCurrencyPipe should add commas where required" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).GpCurrencyPipe"/>
-  <testcase name="GpCurrencyPipe should return 0.00 USD if the input is number with too many decimals" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).GpCurrencyPipe"/>
-  <testcase name="GpCurrencyPipe should return 0.00 USD if the input is a string" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).GpCurrencyPipe"/>
-  <testcase name="GpCurrencyPipe should handle negative numbers" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).GpCurrencyPipe"/>
-  <testcase name="GpCurrencyPipe should be able to customize the digit output" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).GpCurrencyPipe"/>
-  <testcase name="GpCurrencyPipe create an instance" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).GpCurrencyPipe"/>
-  <testcase name="NgbDateAppParserFormatter parsing Can parse the App date format" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).NgbDateAppParserFormatter parsing"/>
-  <testcase name="NgbDateAppParserFormatter parsing Will not parse US Date format" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).NgbDateAppParserFormatter parsing"/>
-  <testcase name="NgbDateAppParserFormatter parsing Should be able to parse a foreign language App date" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).NgbDateAppParserFormatter parsing"/>
-  <testcase name="NgbDateAppParserFormatter parsing Should return null if the parsed language is different from the host language" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).NgbDateAppParserFormatter parsing"/>
-  <testcase name="NgbDateAppParserFormatter parsing Will not parse JS Date format" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).NgbDateAppParserFormatter parsing"/>
-  <testcase name="NgbDateAppParserFormatter parsing Will not parse RoW Date format" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).NgbDateAppParserFormatter parsing"/>
-  <testcase name="NgbDateAppParserFormatter formatting Can take an NgbDateStruct and format it to the App date for a different language" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).NgbDateAppParserFormatter formatting"/>
-  <testcase name="NgbDateAppParserFormatter formatting Can take an NgbDateStruct and format it to the App date" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).NgbDateAppParserFormatter formatting"/>
-  <testcase name="NgbDateAppParserFormatter create an instance" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).NgbDateAppParserFormatter"/>
-  <testcase name="DateFilterComponent should update dateFilterObject dateOne to null and emit when dateSelected is called" time="0.029" classname="Chrome_156_0_0_0_(Linux_0_0_0).DateFilterComponent"/>
-  <testcase name="DateFilterComponent should emit datePicked with dateFilterObject when one date is set" time="0.004" classname="Chrome_156_0_0_0_(Linux_0_0_0).DateFilterComponent"/>
-  <testcase name="DateFilterComponent should update dateFilterObject dateTwo and emit when dateSelected is called" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).DateFilterComponent"/>
-  <testcase name="DateFilterComponent should emit datePicked with null when both dates are null" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).DateFilterComponent"/>
-  <testcase name="DateFilterComponent should create" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).DateFilterComponent"/>
-  <testcase name="DateFilterComponent should update dateFilterObject dateOne and emit when dateSelected is called" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).DateFilterComponent"/>
-  <testcase name="DateFilterComponent should call ngOnChanges and update datePickerOne when preloadedDateOne is set" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).DateFilterComponent"/>
-  <testcase name="DateFilterComponent should update dateFilterObject dateTwo to null and emit when dateSelected is called" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).DateFilterComponent"/>
-  <testcase name="DateFilterComponent should clear dates and emit when dateSelectTypeChange is called" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).DateFilterComponent"/>
-  <testcase name="DateFilterComponent should have only one datepicker input when dateType is on, before, or after" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).DateFilterComponent"/>
-  <testcase name="DateFilterComponent should have two datepicker inputs when dateType is between" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).DateFilterComponent"/>
-  <testcase name="TableRowCheckboxComponent should not do anything on ngOnInit if tableState is not set" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableRowCheckboxComponent"/>
-  <testcase name="TableRowCheckboxComponent should complete destroy$ on ngOnDestroy" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableRowCheckboxComponent"/>
-  <testcase name="TableRowCheckboxComponent should be true and checked if the mode is header and the selected rows equals total rows" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableRowCheckboxComponent"/>
-  <testcase name="TableRowCheckboxComponent should initialize with default values" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableRowCheckboxComponent"/>
-  <testcase name="TableRowCheckboxComponent should be false and unchecked if selectAll$ fires as false" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableRowCheckboxComponent"/>
-  <testcase name="TableRowCheckboxComponent should create" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableRowCheckboxComponent"/>
-  <testcase name="TableRowCheckboxComponent should call onSelectAllChanged and checkIfAllChecked when header checkbox is clicked" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableRowCheckboxComponent"/>
-  <testcase name="TableRowCheckboxComponent should update rowData selected and call checkIfAllChecked when body checkbox is clicked" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableRowCheckboxComponent"/>
-  <testcase name="TableRowCheckboxComponent should be true and checked if selectAll$ fires as true" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableRowCheckboxComponent"/>
-  <testcase name="TableRowCheckboxComponent should be false and unchecked if the mode is header and the selected rows equals total rows" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableRowCheckboxComponent"/>
-  <testcase name="AppTableFilterComponent ngAfterViewInit restore should restore state on ngAfterViewInit for multi-select" time="0.019" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppTableFilterComponent ngAfterViewInit restore"/>
-  <testcase name="AppTableFilterComponent ngAfterViewInit restore should restore state on ngAfterViewInit for select" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppTableFilterComponent ngAfterViewInit restore"/>
-  <testcase name="AppTableFilterComponent ngAfterViewInit restore should restore state on ngAfterViewInit for date" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppTableFilterComponent ngAfterViewInit restore"/>
-  <testcase name="AppTableFilterComponent ngAfterViewInit restore should restore state on ngAfterViewInit for checkbox" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppTableFilterComponent ngAfterViewInit restore"/>
-  <testcase name="AppTableFilterComponent ngAfterViewInit restore should restore state on ngAfterViewInit for text" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppTableFilterComponent ngAfterViewInit restore"/>
-  <testcase name="AppTableFilterComponent buildSearchQuery should build search query for text" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppTableFilterComponent buildSearchQuery"/>
-  <testcase name="AppTableFilterComponent buildSearchQuery should build search query for date" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppTableFilterComponent buildSearchQuery"/>
-  <testcase name="AppTableFilterComponent buildSearchQuery should build search query for checkbox" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppTableFilterComponent buildSearchQuery"/>
-  <testcase name="AppTableFilterComponent buildSearchQuery should build search query for multi-select" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppTableFilterComponent buildSearchQuery"/>
-  <testcase name="AppTableFilterComponent buildSearchQuery should build search query for select" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppTableFilterComponent buildSearchQuery"/>
-  <testcase name="AppTableFilterComponent should create" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppTableFilterComponent"/>
-  <testcase name="AppTableFilterComponent removeFromSearch should remove search query for select" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppTableFilterComponent removeFromSearch"/>
-  <testcase name="AppTableFilterComponent removeFromSearch should remove search query for date" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppTableFilterComponent removeFromSearch"/>
-  <testcase name="AppTableFilterComponent removeFromSearch should remove search query for multi-select" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppTableFilterComponent removeFromSearch"/>
-  <testcase name="AppTableFilterComponent removeFromSearch should remove search query for checkbox" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppTableFilterComponent removeFromSearch"/>
-  <testcase name="AppTableFilterComponent removeFromSearch should remove search query for text" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppTableFilterComponent removeFromSearch"/>
+  <testcase name="DatepickerComponent should be able to open the datepicker programmatically" time="0.022" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
+  <testcase name="DatepickerComponent should be able to toggle the datepicker programmatically" time="0.01" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
+  <testcase name="DatepickerComponent should have the correct format when a jsDate is preloaded" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
+  <testcase name="DatepickerComponent should default to closed" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
+  <testcase name="DatepickerComponent should create" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
+  <testcase name="DatepickerComponent should be allowed to clear the date from the componenet" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
+  <testcase name="DatepickerComponent should should be able to be opened and closed" time="0.006" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
+  <testcase name="DatepickerComponent should be able to be opened" time="0.005" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
+  <testcase name="DatepickerComponent should emit the date with the blur event" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
+  <testcase name="DatepickerComponent should disable the input and not open the datepicker when disabled is true" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
+  <testcase name="DatepickerComponent should allow for the date to be manually entered with a single digit date" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
+  <testcase name="DatepickerComponent should allow for the date to be manually entered" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
+  <testcase name="DatepickerComponent should default to english" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
+  <testcase name="DatepickerComponent should be configurable to have the container in the body" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
+  <testcase name="DatepickerComponent should allow for a max date" time="0.006" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
+  <testcase name="DatepickerComponent should default to not disabled" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
+  <testcase name="DatepickerComponent should let the language get changed" time="0.005" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
+  <testcase name="DatepickerComponent should have the correct format when a AppDate is preloaded" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
+  <testcase name="PadZeroPipe pads a zero to a single digit number" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).PadZeroPipe"/>
+  <testcase name="PadZeroPipe create an instance" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).PadZeroPipe"/>
   <testcase name="PadZeroPipe should return an error if you do not give a number" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).PadZeroPipe"/>
   <testcase name="PadZeroPipe should not pad a zero if the number is over 10" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).PadZeroPipe"/>
-  <testcase name="PadZeroPipe pads a zero to a single digit number" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).PadZeroPipe"/>
-  <testcase name="PadZeroPipe create an instance" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).PadZeroPipe"/>
-  <testcase name="isValidIsoDate Will return null for a date srting that includes time" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).isValidIsoDate"/>
-  <testcase name="isValidIsoDate Will return null for a not real date" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).isValidIsoDate"/>
-  <testcase name="isValidIsoDate Will return null if your date rolls over for a leap year" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).isValidIsoDate"/>
-  <testcase name="isValidIsoDate Will return null for an invalid date" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).isValidIsoDate"/>
-  <testcase name="isValidIsoDate Will return the Date object, at midnight local time, of a date specified" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).isValidIsoDate"/>
-  <testcase name="toInteger Will return NaN if you didnt provice a number" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).toInteger"/>
-  <testcase name="toInteger Will return whole number rounded down from string" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).toInteger"/>
-  <testcase name="toInteger Will return whole number rounded down" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).toInteger"/>
-  <testcase name="toInteger Will return whole number" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).toInteger"/>
-  <testcase name="toInteger Will return whole number from string" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).toInteger"/>
-  <testcase name="UiComponent should create" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).UiComponent"/>
-  <testcase name="GpDatePipePipe create an instance" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).GpDatePipePipe"/>
-  <testcase name="GpDatePipePipe should format a JS Date object" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).GpDatePipePipe"/>
-  <testcase name="GpDatePipePipe should format a string that can be a JS Date object" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).GpDatePipePipe"/>
-  <testcase name="GpDatePipePipe should return a &quot;--&quot; if the date is an empty string" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).GpDatePipePipe"/>
-  <testcase name="GpDatePipePipe should return &quot;Invalid Date&quot; for any input that could be parsed into a Date object but isnt ISO standard" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).GpDatePipePipe"/>
-  <testcase name="GpDatePipePipe should return the correct date for any value that does meet the alternative epoch time" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).GpDatePipePipe"/>
-  <testcase name="GpDatePipePipe should return &quot;Invalid Date&quot; for any input that doesnt meet the alternative epoch time" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).GpDatePipePipe"/>
-  <testcase name="GpDatePipePipe should return &quot;Invalid Date&quot; for any input that cannot be coerced into a JS Date object" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).GpDatePipePipe"/>
-  <testcase name="GpDatePipePipe should keep local date local when useUTC flag is disabled" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).GpDatePipePipe"/>
-  <testcase name="GpDatePipePipe should return &quot;Invalid Date&quot; for any input that passes the regex but isnt a real date" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).GpDatePipePipe"/>
-  <testcase name="GpDatePipePipe should return translated dates if supplied with an alternative language" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).GpDatePipePipe"/>
-  <testcase name="makeAppDate Will return date in English" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).makeAppDate"/>
-  <testcase name="makeAppDate Will return date in French" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).makeAppDate"/>
+  <testcase name="UiComponent should create" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).UiComponent"/>
+  <testcase name="UiService should be created" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).UiService"/>
+  <testcase name="AppCurrencyPipe should return 0.00 USD if the input is a string" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppCurrencyPipe"/>
+  <testcase name="AppCurrencyPipe create an instance" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppCurrencyPipe"/>
+  <testcase name="AppCurrencyPipe should return 0.00 USD if the input is number with too many decimals" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppCurrencyPipe"/>
+  <testcase name="AppCurrencyPipe should add commas where required" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppCurrencyPipe"/>
+  <testcase name="AppCurrencyPipe should be able to customize the digit output" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppCurrencyPipe"/>
+  <testcase name="AppCurrencyPipe should be able to customize the currency" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppCurrencyPipe"/>
+  <testcase name="AppCurrencyPipe should handle negative numbers" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppCurrencyPipe"/>
+  <testcase name="AppCurrencyPipe should add USD and go out to two decimals properly by default" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppCurrencyPipe"/>
+  <testcase name="AppDatePipePipe should return &quot;Invalid Date&quot; for any input that could be parsed into a Date object but isnt ISO standard" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppDatePipePipe"/>
+  <testcase name="AppDatePipePipe should return a &quot;--&quot; if the date is an empty string" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppDatePipePipe"/>
+  <testcase name="AppDatePipePipe should return &quot;Invalid Date&quot; for any input that cannot be coerced into a JS Date object" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppDatePipePipe"/>
+  <testcase name="AppDatePipePipe should keep local date local when useUTC flag is disabled" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppDatePipePipe"/>
+  <testcase name="AppDatePipePipe should return &quot;Invalid Date&quot; for any input that doesnt meet the alternative epoch time" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppDatePipePipe"/>
+  <testcase name="AppDatePipePipe should return translated dates if supplied with an alternative language" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppDatePipePipe"/>
+  <testcase name="AppDatePipePipe create an instance" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppDatePipePipe"/>
+  <testcase name="AppDatePipePipe should return &quot;Invalid Date&quot; for any input that passes the regex but isnt a real date" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppDatePipePipe"/>
+  <testcase name="AppDatePipePipe should return the correct date for any value that does meet the alternative epoch time" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppDatePipePipe"/>
+  <testcase name="AppDatePipePipe should format a JS Date object" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppDatePipePipe"/>
+  <testcase name="AppDatePipePipe should format a string that can be a JS Date object" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppDatePipePipe"/>
+  <testcase name="AppTableFilterComponent should create" time="0.02" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppTableFilterComponent"/>
+  <testcase name="AppTableFilterComponent removeFromSearch should remove search query for select" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppTableFilterComponent removeFromSearch"/>
+  <testcase name="AppTableFilterComponent removeFromSearch should remove search query for date" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppTableFilterComponent removeFromSearch"/>
+  <testcase name="AppTableFilterComponent removeFromSearch should remove search query for text" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppTableFilterComponent removeFromSearch"/>
+  <testcase name="AppTableFilterComponent removeFromSearch should remove search query for checkbox" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppTableFilterComponent removeFromSearch"/>
+  <testcase name="AppTableFilterComponent removeFromSearch should remove search query for multi-select" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppTableFilterComponent removeFromSearch"/>
+  <testcase name="AppTableFilterComponent buildSearchQuery should build search query for text" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppTableFilterComponent buildSearchQuery"/>
+  <testcase name="AppTableFilterComponent buildSearchQuery should build search query for date" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppTableFilterComponent buildSearchQuery"/>
+  <testcase name="AppTableFilterComponent buildSearchQuery should build search query for select" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppTableFilterComponent buildSearchQuery"/>
+  <testcase name="AppTableFilterComponent buildSearchQuery should build search query for checkbox" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppTableFilterComponent buildSearchQuery"/>
+  <testcase name="AppTableFilterComponent buildSearchQuery should build search query for multi-select" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppTableFilterComponent buildSearchQuery"/>
+  <testcase name="AppTableFilterComponent ngAfterViewInit restore should restore state on ngAfterViewInit for checkbox" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppTableFilterComponent ngAfterViewInit restore"/>
+  <testcase name="AppTableFilterComponent ngAfterViewInit restore should restore state on ngAfterViewInit for text" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppTableFilterComponent ngAfterViewInit restore"/>
+  <testcase name="AppTableFilterComponent ngAfterViewInit restore should restore state on ngAfterViewInit for date" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppTableFilterComponent ngAfterViewInit restore"/>
+  <testcase name="AppTableFilterComponent ngAfterViewInit restore should restore state on ngAfterViewInit for select" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppTableFilterComponent ngAfterViewInit restore"/>
+  <testcase name="AppTableFilterComponent ngAfterViewInit restore should restore state on ngAfterViewInit for multi-select" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppTableFilterComponent ngAfterViewInit restore"/>
+  <testcase name="isoDateStrRegExp Can work with iso standard" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).isoDateStrRegExp"/>
   <testcase name="isoDateStrRegExp Does not work with two digit dates" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).isoDateStrRegExp"/>
   <testcase name="isoDateStrRegExp Does not work with single digits" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).isoDateStrRegExp"/>
-  <testcase name="isoDateStrRegExp Can work with iso standard" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).isoDateStrRegExp"/>
-  <testcase name="isNumber Will return false if a number is not supplied" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).isNumber"/>
+  <testcase name="makeAppDate Will return date in French" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).makeAppDate"/>
+  <testcase name="makeAppDate Will return date in English" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).makeAppDate"/>
+  <testcase name="DateFilterComponent should create" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).DateFilterComponent"/>
+  <testcase name="DateFilterComponent should call ngOnChanges and update datePickerOne when preloadedDateOne is set" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).DateFilterComponent"/>
+  <testcase name="DateFilterComponent should have only one datepicker input when dateType is on, before, or after" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).DateFilterComponent"/>
+  <testcase name="DateFilterComponent should emit datePicked with dateFilterObject when one date is set" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).DateFilterComponent"/>
+  <testcase name="DateFilterComponent should have two datepicker inputs when dateType is between" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).DateFilterComponent"/>
+  <testcase name="DateFilterComponent should update dateFilterObject dateOne and emit when dateSelected is called" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).DateFilterComponent"/>
+  <testcase name="DateFilterComponent should update dateFilterObject dateTwo to null and emit when dateSelected is called" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).DateFilterComponent"/>
+  <testcase name="DateFilterComponent should emit datePicked with null when both dates are null" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).DateFilterComponent"/>
+  <testcase name="DateFilterComponent should update dateFilterObject dateOne to null and emit when dateSelected is called" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).DateFilterComponent"/>
+  <testcase name="DateFilterComponent should clear dates and emit when dateSelectTypeChange is called" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).DateFilterComponent"/>
+  <testcase name="DateFilterComponent should update dateFilterObject dateTwo and emit when dateSelected is called" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).DateFilterComponent"/>
+  <testcase name="TableRowCheckboxComponent should complete destroy$ on ngOnDestroy" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableRowCheckboxComponent"/>
+  <testcase name="TableRowCheckboxComponent should call onSelectAllChanged and checkIfAllChecked when header checkbox is clicked" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableRowCheckboxComponent"/>
+  <testcase name="TableRowCheckboxComponent should be false and unchecked if the mode is header and the selected rows equals total rows" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableRowCheckboxComponent"/>
+  <testcase name="TableRowCheckboxComponent should be true and checked if the mode is header and the selected rows equals total rows" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableRowCheckboxComponent"/>
+  <testcase name="TableRowCheckboxComponent should update rowData selected and call checkIfAllChecked when body checkbox is clicked" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableRowCheckboxComponent"/>
+  <testcase name="TableRowCheckboxComponent should initialize with default values" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableRowCheckboxComponent"/>
+  <testcase name="TableRowCheckboxComponent should not do anything on ngOnInit if tableState is not set" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableRowCheckboxComponent"/>
+  <testcase name="TableRowCheckboxComponent should create" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableRowCheckboxComponent"/>
+  <testcase name="TableRowCheckboxComponent should be false and unchecked if selectAll$ fires as false" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableRowCheckboxComponent"/>
+  <testcase name="TableRowCheckboxComponent should be true and checked if selectAll$ fires as true" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableRowCheckboxComponent"/>
+  <testcase name="isNumber Will return true if a number is supplied" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).isNumber"/>
   <testcase name="isNumber Will return true if a string number is supplied" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).isNumber"/>
-  <testcase name="isNumber Will return true if a number is supplied" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).isNumber"/>
-  <testcase name="UiService should be created" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).UiService"/>
-  <testcase name="GpDateStrRegExp Can work with uppercase" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).GpDateStrRegExp"/>
-  <testcase name="GpDateStrRegExp Can use double digit day" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).GpDateStrRegExp"/>
-  <testcase name="GpDateStrRegExp Can use single digit day" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).GpDateStrRegExp"/>
-  <testcase name="GpDateStrRegExp Can use two letter month" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).GpDateStrRegExp"/>
-  <testcase name="GpDateStrRegExp Can use three letter month" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).GpDateStrRegExp"/>
-  <testcase name="GpDateStrRegExp Does not work with random strings" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).GpDateStrRegExp"/>
-  <testcase name="GpDateStrRegExp Can use four letter month" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).GpDateStrRegExp"/>
-  <testcase name="GpDateStrRegExp Does not work with underscores" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).GpDateStrRegExp"/>
-  <testcase name="GpDateStrRegExp Does not work with slashes" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).GpDateStrRegExp"/>
-  <testcase name="GpDateStrRegExp Does not work with periods" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).GpDateStrRegExp"/>
-  <testcase name="GpDateStrRegExp Does not work with iso date" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).GpDateStrRegExp"/>
-  <testcase name="GpDateStrRegExp Can work with lowecase" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).GpDateStrRegExp"/>
-  <testcase name="TableServiceService should only run local search once when search terms change multiple times in a row" time="0.401" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
-  <testcase name="TableServiceService should set sortDirection" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
-  <testcase name="TableServiceService should set sortColumn" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
+  <testcase name="isNumber Will return false if a number is not supplied" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).isNumber"/>
+  <testcase name="AppDateStrRegExp Can use four letter month" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppDateStrRegExp"/>
+  <testcase name="AppDateStrRegExp Does not work with random strings" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppDateStrRegExp"/>
+  <testcase name="AppDateStrRegExp Can use three letter month" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppDateStrRegExp"/>
+  <testcase name="AppDateStrRegExp Does not work with iso date" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppDateStrRegExp"/>
+  <testcase name="AppDateStrRegExp Can use two letter month" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppDateStrRegExp"/>
+  <testcase name="AppDateStrRegExp Does not work with underscores" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppDateStrRegExp"/>
+  <testcase name="AppDateStrRegExp Does not work with slashes" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppDateStrRegExp"/>
+  <testcase name="AppDateStrRegExp Can work with lowecase" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppDateStrRegExp"/>
+  <testcase name="AppDateStrRegExp Can use single digit day" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppDateStrRegExp"/>
+  <testcase name="AppDateStrRegExp Can work with uppercase" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppDateStrRegExp"/>
+  <testcase name="AppDateStrRegExp Does not work with periods" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppDateStrRegExp"/>
+  <testcase name="AppDateStrRegExp Can use double digit day" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).AppDateStrRegExp"/>
+  <testcase name="Table Utils compare should return 0 if both values are equal" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).Table Utils compare"/>
+  <testcase name="Table Utils compare should return 1 if first value is greater than second" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).Table Utils compare"/>
+  <testcase name="Table Utils compare should return -1 if first value is less than second" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).Table Utils compare"/>
+  <testcase name="Table Utils sort should sort data in descending order by name" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).Table Utils sort"/>
+  <testcase name="Table Utils sort should sort data in descending order by id" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).Table Utils sort"/>
+  <testcase name="Table Utils sort should return the same data if column is empty" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).Table Utils sort"/>
+  <testcase name="Table Utils sort should sort data in ascending order by name" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).Table Utils sort"/>
+  <testcase name="Table Utils sort should return the same data if direction is null" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).Table Utils sort"/>
+  <testcase name="Table Utils sort should sort data in ascending order by id" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).Table Utils sort"/>
+  <testcase name="Table Utils rotate should rotate asc to desc" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).Table Utils rotate"/>
+  <testcase name="Table Utils rotate should rotate null to asc" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).Table Utils rotate"/>
+  <testcase name="Table Utils rotate should rotate desc to null" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).Table Utils rotate"/>
+  <testcase name="TableServiceService should filter data locally by on date" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
   <testcase name="TableServiceService should only call fetchData() once when search terms change multiple times in a row" time="0.401" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
-  <testcase name="TableServiceService should handle search terms change" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
-  <testcase name="TableServiceService should initialize everything" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
-  <testcase name="TableServiceService should be created" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
-  <testcase name="TableServiceService should paginate data locally" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
-  <testcase name="TableServiceService should filter data locally by number" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
-  <testcase name="TableServiceService should filter data locally by before date" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
-  <testcase name="TableServiceService should filter data locally by text" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
-  <testcase name="TableServiceService should filter data locally by checkbox" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
-  <testcase name="TableServiceService should filter data locally by after date" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
-  <testcase name="TableServiceService should sort data locally" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
-  <testcase name="TableServiceService should clear state" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
-  <testcase name="TableServiceService should filter data locally by multi-select" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
-  <testcase name="TableServiceService should set data and trigger local search" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
-  <testcase name="TableServiceService should filter data locally by on date" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
-  <testcase name="TableServiceService should filter data locally by between date" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
-  <testcase name="TableServiceService should handle loading state change" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
-  <testcase name="TableServiceService should handle select all change" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
-  <testcase name="TableServiceService should handle selected rows change without data" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
-  <testcase name="TableServiceService should handle selected rows change with data" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
-  <testcase name="TableServiceService should filter data locally by select" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
+  <testcase name="TableServiceService should handle select all change" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
+  <testcase name="TableServiceService should set sortDirection" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
+  <testcase name="TableServiceService should handle loading state change" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
+  <testcase name="TableServiceService should only run local search once when search terms change multiple times in a row" time="0.401" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
   <testcase name="TableServiceService should set and get pageSize" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
-  <testcase name="TableServiceService should set and get page" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
-  <testcase name="TableServiceService should save and restore state" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
-  <testcase name="TableServiceService should call fetchData/local search once no matter how many times restoreState is called" time="0.401" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
-  <testcase name="TableServiceService should handle passing a null value of a filter to search terms change" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
+  <testcase name="TableServiceService should sort data locally" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
+  <testcase name="TableServiceService should be created" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
+  <testcase name="TableServiceService should set data and trigger local search" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
+  <testcase name="TableServiceService should initialize everything" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
   <testcase name="TableServiceService should fetch data from server" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
-  <testcase name="DatepickerComponent should have the correct format when a AppDate is preloaded" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
-  <testcase name="DatepickerComponent should be allowed to clear the date from the componenet" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
-  <testcase name="DatepickerComponent should should be able to be opened and closed" time="0.019" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
-  <testcase name="DatepickerComponent should be able to be opened" time="0.006" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
-  <testcase name="DatepickerComponent should have the correct format when a jsDate is preloaded" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
-  <testcase name="DatepickerComponent should emit the date with the blur event" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
-  <testcase name="DatepickerComponent should be configurable to have the container in the body" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
-  <testcase name="DatepickerComponent should allow for a max date" time="0.007" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
-  <testcase name="DatepickerComponent should default to english" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
-  <testcase name="DatepickerComponent should disable the input and not open the datepicker when disabled is true" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
-  <testcase name="DatepickerComponent should allow for the date to be manually entered" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
-  <testcase name="DatepickerComponent should create" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
-  <testcase name="DatepickerComponent should allow for the date to be manually entered with a single digit date" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
-  <testcase name="DatepickerComponent should be able to open the datepicker programmatically" time="0.006" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
-  <testcase name="DatepickerComponent should be able to toggle the datepicker programmatically" time="0.006" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
-  <testcase name="DatepickerComponent should default to closed" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
-  <testcase name="DatepickerComponent should let the language get changed" time="0.004" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
-  <testcase name="DatepickerComponent should default to not disabled" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).DatepickerComponent"/>
+  <testcase name="TableServiceService should filter data locally by after date" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
+  <testcase name="TableServiceService should set sortColumn" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
+  <testcase name="TableServiceService should filter data locally by before date" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
+  <testcase name="TableServiceService should filter data locally by multi-select" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
+  <testcase name="TableServiceService should set and get page" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
+  <testcase name="TableServiceService should save and restore state" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
+  <testcase name="TableServiceService should filter data locally by select" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
+  <testcase name="TableServiceService should handle selected rows change with data" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
+  <testcase name="TableServiceService should call fetchData/local search once no matter how many times restoreState is called" time="0.401" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
+  <testcase name="TableServiceService should handle selected rows change without data" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
+  <testcase name="TableServiceService should filter data locally by checkbox" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
+  <testcase name="TableServiceService should handle passing a null value of a filter to search terms change" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
+  <testcase name="TableServiceService should filter data locally by number" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
+  <testcase name="TableServiceService should filter data locally by text" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
+  <testcase name="TableServiceService should paginate data locally" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
+  <testcase name="TableServiceService should filter data locally by between date" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
+  <testcase name="TableServiceService should handle search terms change" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
+  <testcase name="TableServiceService should clear state" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableServiceService"/>
+  <testcase name="NgbDateAppParserFormatter create an instance" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).NgbDateAppParserFormatter"/>
+  <testcase name="NgbDateAppParserFormatter formatting Can take an NgbDateStruct and format it to the App date for a different language" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).NgbDateAppParserFormatter formatting"/>
+  <testcase name="NgbDateAppParserFormatter formatting Can take an NgbDateStruct and format it to the App date" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).NgbDateAppParserFormatter formatting"/>
+  <testcase name="NgbDateAppParserFormatter parsing Can parse the App date format" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).NgbDateAppParserFormatter parsing"/>
+  <testcase name="NgbDateAppParserFormatter parsing Will not parse JS Date format" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).NgbDateAppParserFormatter parsing"/>
+  <testcase name="NgbDateAppParserFormatter parsing Will not parse RoW Date format" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).NgbDateAppParserFormatter parsing"/>
+  <testcase name="NgbDateAppParserFormatter parsing Will not parse US Date format" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).NgbDateAppParserFormatter parsing"/>
+  <testcase name="NgbDateAppParserFormatter parsing Should be able to parse a foreign language App date" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).NgbDateAppParserFormatter parsing"/>
+  <testcase name="NgbDateAppParserFormatter parsing Should return null if the parsed language is different from the host language" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).NgbDateAppParserFormatter parsing"/>
+  <testcase name="TriStateCheckboxComponent should cycle value from false to null on third click" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).TriStateCheckboxComponent"/>
+  <testcase name="TriStateCheckboxComponent should emit the updated value on click" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TriStateCheckboxComponent"/>
+  <testcase name="TriStateCheckboxComponent should initialize with null value" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TriStateCheckboxComponent"/>
+  <testcase name="TriStateCheckboxComponent should create" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TriStateCheckboxComponent"/>
+  <testcase name="TriStateCheckboxComponent should cycle value from null to true on first click" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TriStateCheckboxComponent"/>
+  <testcase name="TriStateCheckboxComponent should cycle value from true to false on second click" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TriStateCheckboxComponent"/>
+  <testcase name="isValidIsoDate Will return null if your date rolls over for a leap year" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).isValidIsoDate"/>
+  <testcase name="isValidIsoDate Will return null for an invalid date" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).isValidIsoDate"/>
+  <testcase name="isValidIsoDate Will return null for a not real date" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).isValidIsoDate"/>
+  <testcase name="isValidIsoDate Will return null for a date srting that includes time" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).isValidIsoDate"/>
+  <testcase name="isValidIsoDate Will return the Date object, at midnight local time, of a date specified" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).isValidIsoDate"/>
   <testcase name="padZero Will pad 0" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).padZero"/>
-  <testcase name="padZero Will return error string if trying to pad something that isn't a number" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).padZero"/>
-  <testcase name="padZero Will take a string of a number and pad if less than 10" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).padZero"/>
-  <testcase name="padZero Will not pad a negative number" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).padZero"/>
-  <testcase name="padZero Will take a string of a number and not pad if greater than 10" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).padZero"/>
   <testcase name="padZero Will not pad a number greater than 10" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).padZero"/>
   <testcase name="padZero Will pad a number less than 10" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).padZero"/>
-  <testcase name="TriStateCheckboxComponent should initialize with null value" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TriStateCheckboxComponent"/>
-  <testcase name="TriStateCheckboxComponent should cycle value from null to true on first click" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TriStateCheckboxComponent"/>
-  <testcase name="TriStateCheckboxComponent should emit the updated value on click" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TriStateCheckboxComponent"/>
-  <testcase name="TriStateCheckboxComponent should create" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TriStateCheckboxComponent"/>
-  <testcase name="TriStateCheckboxComponent should cycle value from true to false on second click" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TriStateCheckboxComponent"/>
-  <testcase name="TriStateCheckboxComponent should cycle value from false to null on third click" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).TriStateCheckboxComponent"/>
-  <testcase name="TableComponent should set the loading correctly when loading$ emits data" time="0.015" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
-  <testcase name="TableComponent should create" time="0.004" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
-  <testcase name="TableComponent should set the data with expanded property when expandableRows is true" time="0.004" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
-  <testcase name="TableComponent should set the tableActions template correctly in ngAfterContentInit" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
-  <testcase name="TableComponent should call checkIfAllChecked and update selectedRows" time="0.004" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
-  <testcase name="TableComponent should call clearFilters and remove filters from search" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
-  <testcase name="TableComponent should set the table stats correctly when tableStats$ emits data" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
-  <testcase name="TableComponent should emit rowsSelected event when rows are selected" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
-  <testcase name="TableComponent should call onSort and reset other headers" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
-  <testcase name="TableComponent should set the data with selected property when selectableRows is true" time="0.004" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
-  <testcase name="TableComponent should set the header template correctly in ngAfterContentInit" time="0.004" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
-  <testcase name="TableComponent should set the data correctly when data$ emits data" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
-  <testcase name="TableComponent should set the table caption and summary" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
-  <testcase name="TableComponent should fetch data on init" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
-  <testcase name="TableComponent should set the loadingBodyTemplate correctly in ngAfterContentInit" time="0.004" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
-  <testcase name="TableComponent should set the table service variables on init" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
-  <testcase name="TableComponent AppTemplateDirective should throw an error if name is undefined when getType is called" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent AppTemplateDirective"/>
-  <testcase name="TableComponent should set the body template correctly in ngAfterContentInit" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
-  <testcase name="TableComponent should support grouping rows" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
-  <testcase name="TableComponent HeaderConfigDirective should create an instance" time="0.004" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent HeaderConfigDirective"/>
-  <testcase name="TableComponent HeaderConfigDirective should set up check all checkbox if selectableRows is true" time="0.004" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent HeaderConfigDirective"/>
-  <testcase name="TableComponent HeaderConfigDirective should not add a cell to the filter row if there are no filters" time="0.004" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent HeaderConfigDirective"/>
-  <testcase name="TableComponent HeaderConfigDirective should add a cell to the filter row if selectableRows is true" time="0.004" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent HeaderConfigDirective"/>
-  <testcase name="TableComponent HeaderConfigDirective should add a cell to the filter row if expandableRows is true" time="0.004" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent HeaderConfigDirective"/>
-  <testcase name="TableComponent HeaderConfigDirective should set up expanded row column if expandableRows is true" time="0.004" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent HeaderConfigDirective"/>
-  <testcase name="TableComponent SortableHeaderDirective should remove existing icon if any" time="0.008" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent SortableHeaderDirective"/>
-  <testcase name="TableComponent SortableHeaderDirective should update the icon based on the current sort direction" time="0.004" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent SortableHeaderDirective"/>
-  <testcase name="TableComponent SortableHeaderDirective should set cursor style to pointer on initialization" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent SortableHeaderDirective"/>
+  <testcase name="padZero Will not pad a negative number" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).padZero"/>
+  <testcase name="padZero Will take a string of a number and not pad if greater than 10" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).padZero"/>
+  <testcase name="padZero Will take a string of a number and pad if less than 10" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).padZero"/>
+  <testcase name="padZero Will return error string if trying to pad something that isn't a number" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).padZero"/>
+  <testcase name="TableComponent should set the loading correctly when loading$ emits data" time="0.012" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
+  <testcase name="TableComponent should call checkIfAllChecked and update selectedRows" time="0.005" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
+  <testcase name="TableComponent RowConfigDirective should toggle the expanded state of the row when the icon is clicked" time="0.038" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent RowConfigDirective"/>
+  <testcase name="TableComponent RowConfigDirective should set up row selection checkbox if selectableRows is true" time="0.028" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent RowConfigDirective"/>
+  <testcase name="TableComponent RowConfigDirective should set up expand/collapse row icon if expandableRows is true" time="0.023" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent RowConfigDirective"/>
+  <testcase name="TableComponent RowConfigDirective should update the expand/collapse icon based on the current state of the row" time="0.022" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent RowConfigDirective"/>
+  <testcase name="TableComponent RowConfigDirective should create an instance" time="0.01" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent RowConfigDirective"/>
+  <testcase name="TableComponent should fetch data on init" time="0.004" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
+  <testcase name="TableComponent SortableHeaderDirective should set cursor style to pointer on initialization" time="0.004" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent SortableHeaderDirective"/>
+  <testcase name="TableComponent SortableHeaderDirective should add 'asc' class if direction is 'asc'" time="0.004" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent SortableHeaderDirective"/>
   <testcase name="TableComponent SortableHeaderDirective should create an instance" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent SortableHeaderDirective"/>
   <testcase name="TableComponent SortableHeaderDirective should call rotate method on click" time="0.004" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent SortableHeaderDirective"/>
-  <testcase name="TableComponent SortableHeaderDirective should add 'desc' class if direction is 'desc'" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent SortableHeaderDirective"/>
-  <testcase name="TableComponent SortableHeaderDirective should rotate the sort direction and update the table" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent SortableHeaderDirective"/>
-  <testcase name="TableComponent SortableHeaderDirective should add 'asc' class if direction is 'asc'" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent SortableHeaderDirective"/>
+  <testcase name="TableComponent SortableHeaderDirective should rotate the sort direction and update the table" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent SortableHeaderDirective"/>
+  <testcase name="TableComponent SortableHeaderDirective should add 'desc' class if direction is 'desc'" time="0.002" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent SortableHeaderDirective"/>
+  <testcase name="TableComponent SortableHeaderDirective should update the icon based on the current sort direction" time="0.004" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent SortableHeaderDirective"/>
+  <testcase name="TableComponent SortableHeaderDirective should remove existing icon if any" time="0.005" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent SortableHeaderDirective"/>
+  <testcase name="TableComponent should set the table caption and summary" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
+  <testcase name="TableComponent HeaderConfigDirective should set up check all checkbox if selectableRows is true" time="0.006" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent HeaderConfigDirective"/>
+  <testcase name="TableComponent HeaderConfigDirective should create an instance" time="0.004" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent HeaderConfigDirective"/>
+  <testcase name="TableComponent HeaderConfigDirective should not add a cell to the filter row if there are no filters" time="0.004" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent HeaderConfigDirective"/>
+  <testcase name="TableComponent HeaderConfigDirective should add a cell to the filter row if selectableRows is true" time="0.01" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent HeaderConfigDirective"/>
+  <testcase name="TableComponent HeaderConfigDirective should set up expanded row column if expandableRows is true" time="0.005" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent HeaderConfigDirective"/>
+  <testcase name="TableComponent HeaderConfigDirective should add a cell to the filter row if expandableRows is true" time="0.005" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent HeaderConfigDirective"/>
+  <testcase name="TableComponent should create" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
+  <testcase name="TableComponent AppTemplateDirective should throw an error if name is undefined when getType is called" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent AppTemplateDirective"/>
+  <testcase name="TableComponent should call onSort and reset other headers" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
+  <testcase name="TableComponent should call clearFilters and remove filters from search" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
+  <testcase name="TableComponent should set the table stats correctly when tableStats$ emits data" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
+  <testcase name="TableComponent should set the data with expanded property when expandableRows is true" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
+  <testcase name="TableComponent should set the data with selected property when selectableRows is true" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
+  <testcase name="TableComponent should support grouping rows" time="0.004" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
+  <testcase name="TableComponent should emit rowsSelected event when rows are selected" time="0.005" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
+  <testcase name="TableComponent should set the header template correctly in ngAfterContentInit" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
+  <testcase name="TableComponent should set the tableActions template correctly in ngAfterContentInit" time="0.004" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
+  <testcase name="TableComponent should set the body template correctly in ngAfterContentInit" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
+  <testcase name="TableComponent should set the loadingBodyTemplate correctly in ngAfterContentInit" time="0.004" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
   <testcase name="TableComponent should set the groupHeaderTemplate template correctly in ngAfterContentInit" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
-  <testcase name="TableComponent RowConfigDirective should update the expand/collapse icon based on the current state of the row" time="0.022" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent RowConfigDirective"/>
-  <testcase name="TableComponent RowConfigDirective should toggle the expanded state of the row when the icon is clicked" time="0.022" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent RowConfigDirective"/>
-  <testcase name="TableComponent RowConfigDirective should set up expand/collapse row icon if expandableRows is true" time="0.018" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent RowConfigDirective"/>
-  <testcase name="TableComponent RowConfigDirective should create an instance" time="0.009" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent RowConfigDirective"/>
-  <testcase name="TableComponent RowConfigDirective should set up row selection checkbox if selectableRows is true" time="0.021" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent RowConfigDirective"/>
-  <testcase name="Table Utils compare should return 1 if first value is greater than second" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).Table Utils compare"/>
-  <testcase name="Table Utils compare should return -1 if first value is less than second" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).Table Utils compare"/>
-  <testcase name="Table Utils compare should return 0 if both values are equal" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).Table Utils compare"/>
-  <testcase name="Table Utils rotate should rotate null to asc" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).Table Utils rotate"/>
-  <testcase name="Table Utils rotate should rotate asc to desc" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).Table Utils rotate"/>
-  <testcase name="Table Utils rotate should rotate desc to null" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).Table Utils rotate"/>
-  <testcase name="Table Utils sort should return the same data if column is empty" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).Table Utils sort"/>
-  <testcase name="Table Utils sort should sort data in ascending order by id" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).Table Utils sort"/>
-  <testcase name="Table Utils sort should sort data in descending order by name" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).Table Utils sort"/>
-  <testcase name="Table Utils sort should return the same data if direction is null" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).Table Utils sort"/>
-  <testcase name="Table Utils sort should sort data in ascending order by name" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).Table Utils sort"/>
-  <testcase name="Table Utils sort should sort data in descending order by id" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).Table Utils sort"/>
+  <testcase name="TableComponent should set the table service variables on init" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
+  <testcase name="TableComponent should set the data correctly when data$ emits data" time="0.003" classname="Chrome_156_0_0_0_(Linux_0_0_0).TableComponent"/>
+  <testcase name="toInteger Will return whole number rounded down" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).toInteger"/>
+  <testcase name="toInteger Will return NaN if you didnt provice a number" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).toInteger"/>
+  <testcase name="toInteger Will return whole number rounded down from string" time="0.001" classname="Chrome_156_0_0_0_(Linux_0_0_0).toInteger"/>
+  <testcase name="toInteger Will return whole number from string" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).toInteger"/>
+  <testcase name="toInteger Will return whole number" time="0" classname="Chrome_156_0_0_0_(Linux_0_0_0).toInteger"/>
   <system-out>
     <![CDATA[Chrome 156.0.0.0 (Linux 0.0.0) WARN: 'This table was initialized with the Row Grouping feature. Sorting on name is disabled.'
 ,Chrome 156.0.0.0 (Linux 0.0.0) WARN: 'This table was initialized with the Row Grouping feature. Sorting on area is disabled.'

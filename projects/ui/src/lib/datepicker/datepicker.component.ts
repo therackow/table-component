@@ -19,8 +19,8 @@ import {
 } from "@ng-bootstrap/ng-bootstrap";
 
 import { i18nMonths } from "../i18n-months";
-import { GpDatePipe } from "../pipes/gp-date.pipe";
-import { GpDateStrRegExp } from "../shared/regexp";
+import { AppDatePipe } from "../pipes/app-date.pipe";
+import { AppDateStrRegExp } from "../shared/regexp";
 import { toInteger, isNumber, padZero, isValidIsoDate } from "../shared/utils";
 
 /**
@@ -58,7 +58,7 @@ export class AppDatepickerI18n extends NgbDatepickerI18n {
 }
 
 /**
- * Converts between our GP date format (dd-mmm-yyyy) to the NgbDateStruct used by the underlying datepicker.
+ * Converts between our App date format (dd-mmm-yyyy) to the NgbDateStruct used by the underlying datepicker.
  */
 @Injectable()
 export class NgbDateAppParserFormatter extends NgbDateParserFormatter {
@@ -67,7 +67,7 @@ export class NgbDateAppParserFormatter extends NgbDateParserFormatter {
    */
   public locale: string;
 
-  public constructor(private datePipe: GpDatePipe) {
+  public constructor(private datePipe: AppDatePipe) {
     super();
   }
   /**
@@ -78,7 +78,7 @@ export class NgbDateAppParserFormatter extends NgbDateParserFormatter {
    * @memberof NgbDateAppParserFormatter
    */
   public parse(value: string): NgbDateStruct {
-    if (value && GpDateStrRegExp.test(value)) {
+    if (value && AppDateStrRegExp.test(value)) {
       const dateParts: string[] = value.trim().split("-");
       if (dateParts.length === 3 && isNumber(dateParts[0]) && this.isMonth(dateParts[1]) && isNumber(dateParts[2])) {
         return { day: toInteger(dateParts[0]), month: this.monthToNumber(dateParts[1]), year: toInteger(dateParts[2]) };

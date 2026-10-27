@@ -6,7 +6,7 @@ body {
 }
 
 h1 {
-  @include gp-font-size(32);
+  @include app-font-size(32);
 
   color: $onyx-70;
   font-weight: $regular;
@@ -16,7 +16,7 @@ h1 {
 }
 
 h2 {
-  @include gp-font-size(28);
+  @include app-font-size(28);
 
   color: $onyx-70;
   font-weight: $regular;
@@ -26,7 +26,7 @@ h2 {
 }
 
 h3 {
-  @include gp-font-size(18);
+  @include app-font-size(18);
 
   color: $onyx-80;
   font-weight: $semibold;
@@ -36,7 +36,7 @@ h3 {
 }
 
 h4 {
-  @include gp-font-size(16);
+  @include app-font-size(16);
 
   color: $onyx-80;
   font-weight: $semibold;
@@ -46,7 +46,7 @@ h4 {
 }
 
 .no-content {
-  @include gp-font-size(24);
+  @include app-font-size(24);
 
   color: $onyx-70;
   font-weight: $regular;
@@ -55,7 +55,7 @@ h4 {
 }
 
 .lg-body {
-  @include gp-font-size(16);
+  @include app-font-size(16);
 
   color: $onyx-90;
   font-weight: $regular;
@@ -69,7 +69,7 @@ h4 {
 }
 
 .sm-body {
-  @include gp-font-size(14);
+  @include app-font-size(14);
 
   color: $onyx-90;
   font-weight: $regular;
@@ -83,7 +83,7 @@ h4 {
 }
 
 .disclaimer {
-  @include gp-font-size(14);
+  @include app-font-size(14);
 
   color: $onyx-90;
   font-weight: $regular;
@@ -92,7 +92,7 @@ h4 {
 }
 
 .pipe {
-  @include gp-font-size(14);
+  @include app-font-size(14);
 
   font-weight: $regular;
   margin: 0 16px;

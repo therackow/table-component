@@ -12,7 +12,7 @@ import {
 } from "@ng-bootstrap/ng-bootstrap";
 
 import { i18nMonths } from "../i18n-months";
-import { GpDatePipe } from "../pipes/gp-date.pipe";
+import { AppDatePipe } from "../pipes/app-date.pipe";
 import { DatepickerComponent, NgbDateAppParserFormatter, AppDatepickerI18n } from "./datepicker.component";
 
 describe("DatepickerComponent", () => {
@@ -29,7 +29,7 @@ describe("DatepickerComponent", () => {
       declarations: [DatepickerComponent],
       imports: [NgbDatepickerModule, FormsModule],
       providers: [
-        GpDatePipe,
+        AppDatePipe,
         {
           provide: NgbDateParserFormatter,
           useClass: NgbDateAppParserFormatter,
@@ -239,13 +239,13 @@ describe("DatepickerComponent", () => {
 
 describe("NgbDateAppParserFormatter", () => {
   it("create an instance", () => {
-    const parserFormatter: NgbDateAppParserFormatter = new NgbDateAppParserFormatter(new GpDatePipe());
+    const parserFormatter: NgbDateAppParserFormatter = new NgbDateAppParserFormatter(new AppDatePipe());
     expect(parserFormatter).toBeTruthy();
   });
 
   describe("parsing", () => {
     it("Can parse the App date format", () => {
-      const parserFormatter: NgbDateAppParserFormatter = new NgbDateAppParserFormatter(new GpDatePipe());
+      const parserFormatter: NgbDateAppParserFormatter = new NgbDateAppParserFormatter(new AppDatePipe());
       parserFormatter.locale = "en";
       const result: NgbDateStruct = parserFormatter.parse("01-May-2019");
       expect(result.day).toBe(1);
@@ -254,28 +254,28 @@ describe("NgbDateAppParserFormatter", () => {
     });
 
     it("Will not parse JS Date format", () => {
-      const parserFormatter: NgbDateAppParserFormatter = new NgbDateAppParserFormatter(new GpDatePipe());
+      const parserFormatter: NgbDateAppParserFormatter = new NgbDateAppParserFormatter(new AppDatePipe());
       parserFormatter.locale = "en";
       const result: NgbDateStruct = parserFormatter.parse("2019-05-01");
       expect(result).toBe(null);
     });
 
     it("Will not parse RoW Date format", () => {
-      const parserFormatter: NgbDateAppParserFormatter = new NgbDateAppParserFormatter(new GpDatePipe());
+      const parserFormatter: NgbDateAppParserFormatter = new NgbDateAppParserFormatter(new AppDatePipe());
       parserFormatter.locale = "en";
       const result: NgbDateStruct = parserFormatter.parse("01-05-2019");
       expect(result).toBe(null);
     });
 
     it("Will not parse US Date format", () => {
-      const parserFormatter: NgbDateAppParserFormatter = new NgbDateAppParserFormatter(new GpDatePipe());
+      const parserFormatter: NgbDateAppParserFormatter = new NgbDateAppParserFormatter(new AppDatePipe());
       parserFormatter.locale = "en";
       const result: NgbDateStruct = parserFormatter.parse("05-01-2019");
       expect(result).toBe(null);
     });
 
     it("Should be able to parse a foreign language App date", () => {
-      const parserFormatter: NgbDateAppParserFormatter = new NgbDateAppParserFormatter(new GpDatePipe());
+      const parserFormatter: NgbDateAppParserFormatter = new NgbDateAppParserFormatter(new AppDatePipe());
       parserFormatter.locale = "fr-fr";
       const result: NgbDateStruct = parserFormatter.parse("03-Aoû-2019");
       expect(result.day).toBe(3);
@@ -284,7 +284,7 @@ describe("NgbDateAppParserFormatter", () => {
     });
 
     it("Should return null if the parsed language is different from the host language", () => {
-      const parserFormatter: NgbDateAppParserFormatter = new NgbDateAppParserFormatter(new GpDatePipe());
+      const parserFormatter: NgbDateAppParserFormatter = new NgbDateAppParserFormatter(new AppDatePipe());
       parserFormatter.locale = "en";
       const result: NgbDateStruct = parserFormatter.parse("03-Aoû-2019");
       expect(result).toBe(null);
@@ -293,7 +293,7 @@ describe("NgbDateAppParserFormatter", () => {
 
   describe("formatting", () => {
     it("Can take an NgbDateStruct and format it to the App date", () => {
-      const parserFormatter: NgbDateAppParserFormatter = new NgbDateAppParserFormatter(new GpDatePipe());
+      const parserFormatter: NgbDateAppParserFormatter = new NgbDateAppParserFormatter(new AppDatePipe());
       parserFormatter.locale = "en";
       const date: NgbDateStruct = { day: 1, month: 5, year: 2019 };
       const result: string = parserFormatter.format(date);
@@ -301,7 +301,7 @@ describe("NgbDateAppParserFormatter", () => {
     });
 
     it("Can take an NgbDateStruct and format it to the App date for a different language", () => {
-      const parserFormatter: NgbDateAppParserFormatter = new NgbDateAppParserFormatter(new GpDatePipe());
+      const parserFormatter: NgbDateAppParserFormatter = new NgbDateAppParserFormatter(new AppDatePipe());
       parserFormatter.locale = "fr-fr";
       const date: NgbDateStruct = { day: 1, month: 5, year: 2019 };
       const result: string = parserFormatter.format(date);

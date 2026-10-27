@@ -10,8 +10,8 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { NgSelectModule } from "@ng-select/ng-select";
 import { Subject, BehaviorSubject, Observable, of } from "rxjs";
 import { DatepickerComponent } from "../datepicker/datepicker.component";
-import { GpCurrencyPipe } from "../pipes/gp-currency.pipe";
-import { GpDatePipe } from "../pipes/gp-date.pipe";
+import { AppCurrencyPipe } from "../pipes/app-currency.pipe";
+import { AppDatePipe } from "../pipes/app-date.pipe";
 
 import { TriStateCheckboxComponent } from "../tri-state-checkbox/tri-state-checkbox.component";
 import { DateFilterComponent } from "./table-filter/table-date-filter/table-date-filter.component";
@@ -89,13 +89,13 @@ import { TableService } from "./table.service";
           <td>{{ country.area | number }}</td>
           <td>{{ country.population | number }}</td>
           <td>{{ country.g7 }}</td>
-          <td>{{ country.established | gpDatePipe }}</td>
+          <td>{{ country.established | appDatePipe }}</td>
           <td>
             <ul>
               <li *ngFor="let language of country.languages">{{ language }}</li>
             </ul>
           </td>
-          <td>{{ country.gdpPerCapitaUSD | gpCurrency: "USD" : "1.2-2" }}</td>
+          <td>{{ country.gdpPerCapitaUSD | appCurrency: "USD" : "1.2-2" }}</td>
         </tr>
         <tr class="expanded-row" *ngIf="country.expanded">
           <td style="background-color: aqua; border-bottom: 1px solid gray" colspan="10">{{ country | json }}</td>
@@ -197,8 +197,8 @@ describe("TableComponent", () => {
         TriStateCheckboxComponent,
         DateFilterComponent,
         DatepickerComponent,
-        GpDatePipe,
-        GpCurrencyPipe,
+        AppDatePipe,
+        AppCurrencyPipe,
       ],
       providers: [
         DecimalPipe,

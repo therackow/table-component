@@ -9,9 +9,9 @@ import { isValidIsoDate, makeAppDate } from "../shared/utils";
  * EX: 03-JAN-2022
  */
 @Pipe({
-  name: "gpDatePipe",
+  name: "appDatePipe",
 })
-export class GpDatePipe implements PipeTransform {
+export class AppDatePipe implements PipeTransform {
   /**
    * Take the input and try to coerce it to a JS Date before passing it to the formatting function.
    *

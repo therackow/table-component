@@ -6,8 +6,8 @@ import "@angular/localize/init";
  */
 export * from "./lib/table/table-filter/table-date-filter/table-date-filter.component";
 export * from "./lib/datepicker/datepicker.component";
-export * from "./lib/pipes/gp-currency.pipe";
-export * from "./lib/pipes/gp-date.pipe";
+export * from "./lib/pipes/app-currency.pipe";
+export * from "./lib/pipes/app-date.pipe";
 export * from "./lib/pipes/pad-zero.pipe";
 export * from "./lib/shared/regexp";
 export * from "./lib/shared/utils";

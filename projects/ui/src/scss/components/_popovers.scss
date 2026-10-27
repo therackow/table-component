@@ -4,7 +4,7 @@
   border: 1px solid $onyx-ui-50;
 
   .popover-body {
-    @include gp-font-size(14);
+    @include app-font-size(14);
 
     padding: 15px;
     font-family: $font-family-sans-serif;
@@ -33,7 +33,7 @@
     font-family: $font-family-sans-serif;
 
     .popover-body {
-      @include gp-font-size(12);
+      @include app-font-size(12);
 
       fa-icon {
         position: absolute;
@@ -58,7 +58,7 @@
 
           label,
           .form-control {
-            @include gp-font-size(12);
+            @include app-font-size(12);
 
             margin-right: 0;
           }
@@ -87,13 +87,13 @@
     }
 
     .popover-body {
-      @include gp-font-size(14);
+      @include app-font-size(14);
 
       color: $white-00;
 
       table &,
       .table & {
-        @include gp-font-size(14);
+        @include app-font-size(14);
       }
     }
   }

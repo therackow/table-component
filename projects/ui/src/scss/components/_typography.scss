@@ -3,7 +3,7 @@
 a,
 a:not([href], [tabindex]),
 a:not([href]):not([class]) {
-  @include gp-font-size(16);
+  @include app-font-size(16);
 
   font-family: $font-family-sans-serif;
   font-weight: $regular;
@@ -24,14 +24,14 @@ a:not([href]):not([class]) {
   text-decoration-thickness: 8%;
 
   fa-icon {
-    @include gp-font-size(14);
+    @include app-font-size(14);
   }
 
   &.inline-link {
     line-height: 24px;
 
     fa-icon {
-      @include gp-font-size(12);
+      @include app-font-size(12);
     }
   }
 
@@ -81,17 +81,17 @@ a:not([href]):not([class]) {
   }
 
   &.sm-link {
-    @include gp-font-size(14);
+    @include app-font-size(14);
 
     letter-spacing: 0.1px;
 
     fa-icon {
-      @include gp-font-size(12);
+      @include app-font-size(12);
     }
 
     &.inline-link {
       fa-icon {
-        @include gp-font-size(10);
+        @include app-font-size(10);
       }
     }
   }

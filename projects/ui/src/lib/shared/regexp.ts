@@ -8,7 +8,7 @@
  *
  * i.e. 01-Jan-2022, 31-Dec-2000
  */
-export const GpDateStrRegExp: RegExp = /^\d{1,2}-\S{2,4}-\d{4}$/;
+export const AppDateStrRegExp: RegExp = /^\d{1,2}-\S{2,4}-\d{4}$/;
 
 /**
  * This matches a string representation of a date against the expected ISO format.

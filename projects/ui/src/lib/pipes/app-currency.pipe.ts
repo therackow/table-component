@@ -5,9 +5,9 @@ import { Pipe, PipeTransform } from "@angular/core";
  * Our custom pipe to return App specific currency formatting.
  */
 @Pipe({
-  name: "gpCurrency",
+  name: "appCurrency",
 })
-export class GpCurrencyPipe extends CurrencyPipe implements PipeTransform {
+export class AppCurrencyPipe extends CurrencyPipe implements PipeTransform {
   /**
    * Transforms the value based on the original Angular Currency Pipe. From there it
    * turns it into our App format.
@@ -19,7 +19,7 @@ export class GpCurrencyPipe extends CurrencyPipe implements PipeTransform {
    * @param [currencyCode]
    * @param [digits]
    * @returns
-   * @memberof GpCurrencyPipe
+   * @memberof AppCurrencyPipe
    */
   public transform(value: any, currencyCode?: string, digits?: string): any {
     if (isNaN(value)) {

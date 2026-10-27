@@ -26,7 +26,7 @@
       }
 
       #sub_brand {
-        @include gp-font-size(20);
+        @include app-font-size(20);
 
         font-weight: $regular;
         margin-right: 32px;
@@ -51,7 +51,7 @@
             color: $onyx-60;
 
             .ng-placeholder {
-              @include gp-font-size(14);
+              @include app-font-size(14);
             }
 
             .ng-arrow-wrapper {
@@ -99,7 +99,7 @@
     }
 
     .page-title-bar {
-      @include gp-font-size(16);
+      @include app-font-size(16);
 
       color: $onyx-70;
       font-weight: $medium;
@@ -111,7 +111,7 @@
     }
 
     .extra-detail {
-      @include gp-font-size(14);
+      @include app-font-size(14);
 
       color: $onyx-70;
       font-weight: $regular;
@@ -121,7 +121,7 @@
       letter-spacing: 0.25px;
 
       .subtitle {
-        @include gp-font-size(12);
+        @include app-font-size(12);
 
         letter-spacing: 0.1px;
       }
@@ -129,7 +129,7 @@
 
     .app-menu {
       .app-item {
-        @include gp-font-size(18);
+        @include app-font-size(18);
 
         margin-right: 24px;
         padding: 8px 12px;
@@ -237,7 +237,7 @@
         }
 
         .nav-link {
-          @include gp-font-size(16);
+          @include app-font-size(16);
 
           color: $iris-60;
           padding: 0 20px;
@@ -249,7 +249,7 @@
 
         > fa-icon,
         > fa-layers {
-          @include gp-font-size(24);
+          @include app-font-size(24);
 
           color: $iris-60;
           margin: 0 20px;
@@ -297,7 +297,7 @@
           }
 
           &:first-of-type {
-            @include gp-font-size(14);
+            @include app-font-size(14);
 
             color: $iris-60;
             font-weight: $bold;

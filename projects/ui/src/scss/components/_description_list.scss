@@ -1,6 +1,6 @@
 dl {
   .description-header {
-    @include gp-font-size(14);
+    @include app-font-size(14);
 
     font-weight: $semibold;
     background-color: $jade-60;
@@ -22,7 +22,7 @@ dl {
 
     dt,
     dd {
-      @include gp-font-size(16);
+      @include app-font-size(16);
 
       align-self: center;
       margin: 0;
